@@ -1,0 +1,60 @@
+.middleBox
+{
+  left : 50%;
+  top : 50%;
+  position: absolute;
+  transform: translate(-50%,-60%);
+  max-width : 114rem;
+  height : auto;
+
+  &__imageAndName
+  {
+
+    &--image
+    {
+      margin-right: $gutter-horizontal;
+      float:left;
+    }
+    &--name
+    {
+      float:left;
+    }
+  }
+
+  &__links
+  {
+
+      .col-1-of-4
+      {
+        margin-top : 6rem;
+        margin-right: $gutter-horizontal;
+        width : calc((100% - 3 * #{$gutter-horizontal}) / 4 );
+        float : left;
+        &:last-child
+        {
+          margin-right: 0;
+        }
+      }
+  }
+}
+
+#img-logo
+{
+  display : block;
+  width : 8rem;
+  height:8rem;
+  margin : 0 auto;
+  z-index :1;
+}
+.middleBox__links--link1
+{
+  animation-name:logo-transition;
+  animation-duration: 1s;
+}
+
+.portfolio-img
+{
+    border-radius: 10rem;
+    border : solid 0.5rem #fff;
+    padding:1rem;
+}

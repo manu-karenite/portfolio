@@ -1,0 +1,24 @@
+
+.page-head {
+  height: 70vh;
+  background-color: $color-primary;
+  position : relative;
+    clip-path : polygon( 0 0 , 100% 0 , 100% 85% , 0 100%);
+}
+.logo-box {
+  position: absolute;
+  top: $logo-top;
+  left: $logo-left;
+  animation-name: logo-transition-on-load;
+  animation-duration: 2s;
+}
+
+.firstName {
+  animation-name: firstName-TtoB;
+  animation-duration: 2s;
+}
+.lastName {
+  animation-name: lastName-BtoT;
+  animation-duration: 2s;
+  border-top: solid $color-secondary 0.5rem;
+}

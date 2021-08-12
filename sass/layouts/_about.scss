@@ -1,0 +1,31 @@
+.about-me
+{
+  background-color: $color-secondary;
+  height: contain;
+  margin-top :-12vh;
+  color:red;
+
+  &__row-of-2
+  {
+    max-width:114rem;
+    padding: 25rem 2rem;
+    margin : 0 auto;
+    font-size : 3rem;
+    &--col-1
+    {
+      max-width : calc((100% - #{$gutter-horizontal-about-me}) /2 );
+      float:left;
+      margin-right : $gutter-horizontal-about-me;
+      &:last-child
+      {
+        margin-right : 0rem;
+      }
+    }
+
+  }
+}
+
+#boy-programming
+{
+  width : 50rem;
+}
