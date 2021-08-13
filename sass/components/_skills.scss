@@ -1,0 +1,29 @@
+.row-about-me
+{
+
+  .col-1-of-4 //for the 4 tab display
+  {
+
+    width : calc((100% - 3 * #{$gutter-col-1-of-4}) / 4 );
+    float:left;
+    margin-bottom: $gutter-vertical-skills;
+    &:not(:last-child)
+    {
+      margin-right : $gutter-col-1-of-4;
+    }
+  }
+
+  .col-1-of-3 //for the 3 tab display
+  {
+
+    width : calc((100% - 2 * #{$gutter-col-1-of-4}) / 3 );
+    float:left;
+    &:not(:last-child)
+    {
+      margin-right : $gutter-col-1-of-4;
+    }
+  }
+
+
+
+}
