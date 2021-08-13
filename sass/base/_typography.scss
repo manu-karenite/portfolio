@@ -22,3 +22,14 @@
   animation-duration: 2s;
   border-top: solid $color-secondary 0.5rem;
 }
+
+.content-about-me
+{
+  background-color: $color-match-jacket;
+  color:$color-match-table;
+  padding: 2rem;
+  border-radius : 0.5rem;
+  margin-bottom: $gutter-vertical-skills;
+  line-height: 130%;
+  font-size:2.9rem;
+}
