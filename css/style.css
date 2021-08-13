@@ -116,11 +116,15 @@ body {
   width: 8rem;
   height: 8rem;
   margin: 0 auto;
-  z-index: 1; }
+  z-index: 1;
+  transition: all 0.33s; }
+  #img-logo:hover {
+    cursor: pointer;
+    transform: translateY(-1rem) scaleX(1.2) scaleY(1.2); }
 
 .middleBox__links--link1 {
   animation-name: logo-transition;
-  animation-duration: 1s; }
+  animation-duration: all 0.2s; }
 
 .portfolio-img {
   border-radius: 10rem;
