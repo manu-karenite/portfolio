@@ -1,9 +1,12 @@
+
 .about-me
 {
   background-color: $color-secondary;
   height: contain;
   margin-top :-12vh;
   color:red;
+  padding:10rem;
+  clip-path : polygon( 0 12vh , 100% 0 , 100% 85% , 0 100%);
 
   &__row-of-2
   {
