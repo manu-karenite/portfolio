@@ -1,0 +1,66 @@
+.about-career
+{
+  
+    /*Miscc Setings*/
+    color:$color-white;
+    font-size : 3rem;
+    position: relative;
+    background-color: $color-match-jacket;
+    height : max-content;
+    padding-bottom: $section-bottom-space;
+    margin-top:-20rem;
+    z-index: -1;
+    padding-top : 20rem;
+    .my-education
+    {
+        position: relative;
+        .my-education-header
+        {
+           font-weight: bolder;
+           font-family: 'Secular One', sans-serif;
+           letter-spacing: 0.5rem;
+           left : 50%;
+            text-align: center;
+            padding : 2.5rem;
+            font-size: 7rem;
+            color:#ffb558;
+
+        }
+        .education-detail
+        {
+          padding: 0 20rem 0 20rem;
+          display: block;
+          margin : 3rem;
+          .name-of-degree
+          {
+              color: #FFB558;
+              display: inline-block;
+            font-weight: bolder;
+              line-height : 5rem;
+              height: 5rem;
+          }
+          .institute-name-and-passing {
+
+            color:#ffb558;
+            .institute{
+               float :left;
+               padding-left: 6rem;
+            }
+            .passing
+            {
+                float:right;
+            }
+              }
+              .course-description
+                {
+                margin-top : 2rem;
+                padding-left : 4rem ; padding-right : 4rem;
+                word-wrap :break-word;
+                font-family: 'Jost', sans-serif;
+                }
+        }
+
+    }
+
+    
+}
