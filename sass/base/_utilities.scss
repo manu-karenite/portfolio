@@ -3,7 +3,7 @@
   font-family: "Candal", sans-serif;
   font-size: 6.5rem;
   color: $color-secondary;
-  letter-spacing: 4px;
+  letter-spacing: $letter-space;
   text-align: center;
   padding: 1.3rem 1rem;
 }
@@ -14,7 +14,7 @@
   text-align: center;
   border-radius : 0.5rem;
   padding: $padding-skills;
-  letter-spacing: 0.2rem;
+  letter-spacing: $letter-space-medium;
   font-family: 'Jost', sans-serif;
   font-weight : bold;
   color:$color-match-table;
