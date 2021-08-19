@@ -1,57 +1,11 @@
-@keyframes logo-transition-on-load {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0; }
-  25% {
-    transform: rotate(30deg);
-    opacity: 0.2; }
-  75% {
-    transform: rotate(-30deg);
-    opacity: 0.8; }
-  100% {
-    transform: rotate(0deg);
-    opacity: 1; } }
-
-@keyframes firstName-TtoB {
-  0% {
-    transform: translateY(-7rem);
-    opacity: 0; }
-  80% {
-    transform: translateY(2rem);
-    opacity: 0.8; }
-  100% {
-    transform: translateY(0rem);
-    opacity: 1; } }
-
-@keyframes lastName-BtoT {
-  0% {
-    transform: translateY(7rem);
-    opacity: 0;
-    border: none; }
-  80% {
-    transform: translateY(-2rem);
-    opacity: 0.8;
-    border: none; }
-  100% {
-    transform: translateY(0rem);
-    opacity: 1;
-    border-top: solid #d1a683 0.5rem; } }
-
-@keyframes logo-transition {
-  0% {
-    z-index: -1;
-    opacity: 0; }
-  100% {
-    z-index: 1;
-    opacity: 1; } }
-
 /*Universal Selector*/
 *,
 *::before,
 *::after {
   margin: 0rem;
   padding: 0rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 html {
   font-size: 62.5%; }
@@ -59,6 +13,72 @@ html {
 body {
   box-sizing: border-box;
   padding: 2.5rem; }
+
+.u-name-formatting {
+  font-weight: bold;
+  font-family: "Candal", sans-serif;
+  font-size: 6.5rem;
+  color: #d1a683;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  padding: 1.3rem 1rem; }
+
+.u-format-skills {
+  background-color: #2f2e41;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  letter-spacing: 0.2rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  color: #f2f2f2; }
+
+.u-center-img-wrt-parent {
+  margin: 0 auto; }
+
+.middleBox {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -60%);
+  max-width: 114rem;
+  height: auto; }
+  .middleBox__imageAndName--image {
+    margin-right: 4rem;
+    float: left; }
+  .middleBox__imageAndName--name {
+    float: left; }
+  .middleBox__links .col-1-of-4 {
+    margin-top: 6rem;
+    margin-right: 4rem;
+    width: calc((100% - 3 * 4rem) / 4);
+    float: left; }
+    .middleBox__links .col-1-of-4:last-child {
+      margin-right: 0; }
+
+#img-logo {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  z-index: 1;
+  transition: all 0.33s; }
+  #img-logo:hover {
+    cursor: pointer;
+    transform: translateY(-1rem) scaleX(1.2) scaleY(1.2); }
+
+.middleBox__links--link1 {
+  animation-name: logo-transition;
+  animation-duration: all 0.2s; }
+
+.portfolio-img {
+  border-radius: 10rem;
+  border: solid 0.5rem #fff;
+  padding: 1rem; }
+
+.links-section {
+  max-width: 114rem;
+  border: 1px white solid; }
 
 .page-head {
   height: 70vh;
@@ -109,32 +129,6 @@ body {
   width: 6rem;
   padding-left: 3rem; }
 
-.u-name-formatting {
-  font-weight: bold;
-  font-family: "Candal", sans-serif;
-  font-size: 6.5rem;
-  color: #d1a683;
-  letter-spacing: 0.4rem;
-  text-align: center;
-  padding: 1.3rem 1rem; }
-
-.u-format-skills {
-  background-color: #2f2e41;
-  text-align: center;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  letter-spacing: 0.2rem;
-  font-family: 'Jost', sans-serif;
-  font-weight: bold;
-  color: #f2f2f2; }
-
-.u-center-img-wrt-parent {
-  margin: 0 auto; }
-
-.links-section {
-  max-width: 114rem;
-  border: 1px white solid; }
-
 .about-me {
   background-color: #d1a683;
   height: contain;
@@ -160,46 +154,6 @@ body {
 #boy-programming {
   width: 50rem; }
 
-.middleBox {
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  transform: translate(-50%, -60%);
-  max-width: 114rem;
-  height: auto; }
-  .middleBox__imageAndName--image {
-    margin-right: 4rem;
-    float: left; }
-  .middleBox__imageAndName--name {
-    float: left; }
-  .middleBox__links .col-1-of-4 {
-    margin-top: 6rem;
-    margin-right: 4rem;
-    width: calc((100% - 3 * 4rem) / 4);
-    float: left; }
-    .middleBox__links .col-1-of-4:last-child {
-      margin-right: 0; }
-
-#img-logo {
-  display: block;
-  width: 8rem;
-  height: 8rem;
-  margin: 0 auto;
-  z-index: 1;
-  transition: all 0.33s; }
-  #img-logo:hover {
-    cursor: pointer;
-    transform: translateY(-1rem) scaleX(1.2) scaleY(1.2); }
-
-.middleBox__links--link1 {
-  animation-name: logo-transition;
-  animation-duration: all 0.2s; }
-
-.portfolio-img {
-  border-radius: 10rem;
-  border: solid 0.5rem #fff;
-  padding: 1rem; }
-
 .row-about-me .col-1-of-4 {
   width: calc((100% - 3 * 1.5rem) / 4);
   float: left;
@@ -219,11 +173,11 @@ body {
   font-size: 3rem;
   position: relative;
   background-color: #2f2e41;
-  height: max-content;
   padding-bottom: 8rem;
   margin-top: -20rem;
   z-index: -1;
-  padding-top: 20rem; }
+  padding-top: 15rem;
+  padding-bottom: 25rem; }
   .about-career .my-education {
     position: relative; }
     .about-career .my-education .my-education-header {
@@ -258,3 +212,126 @@ body {
         padding-right: 4rem;
         word-wrap: break-word;
         font-family: 'Jost', sans-serif; }
+
+.my-work {
+  padding-bottom: 8rem;
+  position: relative; }
+  .my-work .my-work-experience .my-work-header {
+    font-weight: bolder;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 0.5rem;
+    left: 50%;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 7rem;
+    color: #ffb558; }
+  .my-work .my-work-experience .work-detail {
+    padding: 0 20rem 3rem 20rem;
+    margin: 5rem; }
+    .my-work .my-work-experience .work-detail .col-3-of-4 {
+      float: left;
+      margin-right: 4rem;
+      width: calc(((100% - 4rem ) / 4 ) * 3); }
+      .my-work .my-work-experience .work-detail .col-3-of-4 .organization-name {
+        color: #ffb558;
+        font-weight: bolder;
+        line-height: 5rem;
+        height: 5rem;
+        font-family: 'Jost', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        font-size: 3.5rem; }
+      .my-work .my-work-experience .work-detail .col-3-of-4 .position-and-activeyear .position {
+        margin-right: 4rem;
+        width: calc(((100% - 4rem) /3 ) * 2);
+        float: left;
+        font-family: 'Secular One', sans-serif;
+        word-spacing: 2px;
+        font-size: 3rem;
+        color: #ffb558;
+        padding-left: 6rem; }
+      .my-work .my-work-experience .work-detail .col-3-of-4 .position-and-activeyear .activeyear {
+        width: calc(((100% - 4rem) /3 ) * 1);
+        float: left;
+        font-family: 'Secular One', sans-serif;
+        word-spacing: 2px;
+        font-size: 3rem;
+        color: #ffb558;
+        padding-left: 6rem; }
+      .my-work .my-work-experience .work-detail .col-3-of-4 .work-description {
+        margin-top: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        word-wrap: normal;
+        font-family: 'Jost', sans-serif;
+        text-justify: auto;
+        padding-top: 4rem; }
+    .my-work .my-work-experience .work-detail .col-1-of-4 {
+      float: left;
+      width: calc(((100% - 4rem ) / 4 ) *  1);
+      height: 18rem;
+      width: 18rem; }
+      .my-work .my-work-experience .work-detail .col-1-of-4 .type-of-role {
+        text-align: center;
+        width: 18rem;
+        font-family: 'Secular One', sans-serif;
+        word-spacing: 2px;
+        font-size: 3rem;
+        color: #ffb558;
+        letter-spacing: 2px;
+        padding: 1rem 0; }
+
+#organization-logo, .organization-img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 2rem; }
+
+.organization-img {
+  background-color: #fff; }
+
+@keyframes logo-transition-on-load {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0; }
+  25% {
+    transform: rotate(30deg);
+    opacity: 0.2; }
+  75% {
+    transform: rotate(-30deg);
+    opacity: 0.8; }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1; } }
+
+@keyframes firstName-TtoB {
+  0% {
+    transform: translateY(-7rem);
+    opacity: 0; }
+  80% {
+    transform: translateY(2rem);
+    opacity: 0.8; }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1; } }
+
+@keyframes lastName-BtoT {
+  0% {
+    transform: translateY(7rem);
+    opacity: 0;
+    border: none; }
+  80% {
+    transform: translateY(-2rem);
+    opacity: 0.8;
+    border: none; }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+    border-top: solid #d1a683 0.5rem; } }
+
+@keyframes logo-transition {
+  0% {
+    z-index: -1;
+    opacity: 0; }
+  100% {
+    z-index: 1;
+    opacity: 1; } }

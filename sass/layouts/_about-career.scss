@@ -6,11 +6,12 @@
     font-size : 3rem;
     position: relative;
     background-color: $color-match-jacket;
-    height : max-content;
     padding-bottom: $section-bottom-space;
+    
     margin-top:-20rem;
     z-index: -1;
-    padding-top : 20rem;
+    padding-top : 15rem;
+    padding-bottom : 25rem; //becayuse we have pust -20 rem top
     .my-education
     {
         position: relative;
