@@ -1,17 +1,22 @@
-@import "abstract/mixins";
-@import "abstract/variables";
 
-@import "base/animation";
 @import "base/base";
-@import "base/typography";
+
+@import "abstract/variables";
+@import "abstract/mixins";
+
 @import "base/utilities";
 
-
+@import "layouts/head";
 @import "components/contact-me";
+@import "base/typography";
 
 @import "layouts/about";
-@import "layouts/head";
 @import "components/skills";
-
-
 @import "layouts/about-career";
+@import "layouts/my-work";
+@import "base/animation";
+
+
+
+
+
