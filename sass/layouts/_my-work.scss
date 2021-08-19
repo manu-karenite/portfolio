@@ -1,0 +1,116 @@
+.my-work
+{
+   padding-bottom: 8rem;
+    position: relative;
+    .my-work-experience
+{
+    .my-work-header
+    {
+        font-weight: bolder;
+        font-family: 'Secular One', sans-serif;
+        letter-spacing: 0.5rem;
+        left : 50%;
+        text-align: center;
+        padding : 2.5rem;
+        font-size: 7rem;
+        color:#ffb558;
+    }
+    .work-detail
+    {
+        
+        padding: 0 20rem 3rem 20rem;
+          margin : 5rem;
+
+        .col-3-of-4
+        {
+            float : left;
+            margin-right: $work-gutter;
+            width : calc(((100% - #{$work-gutter} ) / 4 ) * 3 );
+
+            .organization-name
+            {
+                color:#ffb558;
+                font-weight : bolder;
+                line-height:5rem;
+                height:5rem;
+                font-family: 'Jost', sans-serif;
+                font-weight : bold;
+                letter-spacing: $letter-space-medium;
+                font-size: 3.5rem;
+            }
+            .position-and-activeyear
+            {
+                .position
+                {
+                    margin-right : $work-gutter;
+                    width : calc(((100% - #{$work-gutter}) /3 ) * 2);
+                    float :left;
+                    font-family: 'Secular One', sans-serif;
+                    word-spacing: 2px;
+                    font-size : 3rem;
+                    color : #ffb558;
+                    padding-left :6rem;
+
+                }
+                .activeyear
+                {
+                    width : calc(((100% - #{$work-gutter}) /3 ) * 1);
+                    float:left;
+                    font-family: 'Secular One', sans-serif;
+                    word-spacing: 2px;
+                    font-size : 3rem;
+                    color : #ffb558;
+                    padding-left :6rem;
+                    
+                }
+
+            
+            }
+            .work-description
+            {
+                
+                margin-top : 2rem;
+                padding-left : 4rem ; padding-right : 4rem;
+                word-wrap :normal;
+                font-family: 'Jost', sans-serif;
+                text-justify: auto;
+                padding-top : 4rem;
+               
+            }
+           
+            
+        }
+        .col-1-of-4
+        {
+            float :left;
+            width : calc(((100% - #{$work-gutter} ) / 4 ) *  1 ) ;
+            height : 18rem;
+            width : 18rem;
+
+           .type-of-role
+           {
+               text-align: center;
+               width : 18rem;
+               font-family: 'Secular One', sans-serif;
+                word-spacing: 2px;
+                font-size : 3rem;
+                color : #ffb558;
+                letter-spacing : 2px;
+                padding : 1rem 0;
+               
+           }
+        }
+       
+    }
+}
+}
+
+#organization-logo , .organization-img
+{
+    height : 18rem;
+    width : 18rem;
+    border-radius : 2rem;
+}
+.organization-img{
+    background-color: $color-white;
+}
