@@ -46,7 +46,7 @@
                     width : calc(((100% - #{$work-gutter}) /3 ) * 2);
                     float :left;
                     font-family: 'Secular One', sans-serif;
-                    word-spacing: 2px;
+                    word-spacing: 0.2rem;
                     font-size : 3rem;
                     color : #ffb558;
                     padding-left :6rem;
@@ -57,7 +57,7 @@
                     width : calc(((100% - #{$work-gutter}) /3 ) * 1);
                     float:left;
                     font-family: 'Secular One', sans-serif;
-                    word-spacing: 2px;
+                    word-spacing: 0.2rem;
                     font-size : 3rem;
                     color : #ffb558;
                     padding-left :6rem;
@@ -92,10 +92,10 @@
                text-align: center;
                width : 18rem;
                font-family: 'Secular One', sans-serif;
-                word-spacing: 2px;
+                word-spacing: 0.2rem;
                 font-size : 3rem;
                 color : #ffb558;
-                letter-spacing : 2px;
+                letter-spacing : 0.2rem;
                 padding : 1rem 0;
                
            }
