@@ -78,7 +78,7 @@ body {
 
 .links-section {
   max-width: 114rem;
-  border: 1px white solid; }
+  border: 0.1rem white solid; }
 
 .page-head {
   height: 70vh;
@@ -246,7 +246,7 @@ body {
         width: calc(((100% - 4rem) /3 ) * 2);
         float: left;
         font-family: 'Secular One', sans-serif;
-        word-spacing: 2px;
+        word-spacing: 0.2rem;
         font-size: 3rem;
         color: #ffb558;
         padding-left: 6rem; }
@@ -254,7 +254,7 @@ body {
         width: calc(((100% - 4rem) /3 ) * 1);
         float: left;
         font-family: 'Secular One', sans-serif;
-        word-spacing: 2px;
+        word-spacing: 0.2rem;
         font-size: 3rem;
         color: #ffb558;
         padding-left: 6rem; }
@@ -275,10 +275,10 @@ body {
         text-align: center;
         width: 18rem;
         font-family: 'Secular One', sans-serif;
-        word-spacing: 2px;
+        word-spacing: 0.2rem;
         font-size: 3rem;
         color: #ffb558;
-        letter-spacing: 2px;
+        letter-spacing: 0.2rem;
         padding: 1rem 0; }
 
 #organization-logo, .organization-img {
