@@ -181,6 +181,7 @@ body {
   position: relative;
   background-color: #2f2e41;
   padding-bottom: 8rem;
+  height: auto;
   margin-top: -20rem;
   z-index: -1;
   padding-top: 15rem;
@@ -342,3 +343,41 @@ body {
   100% {
     z-index: 1;
     opacity: 1; } }
+
+.my-projects {
+  color: red;
+  background-color: purple;
+  font-size: 4rem;
+  position: relative;
+  height: fit-content;
+  margin-top: 2.5rem; }
+  .my-projects .project-header {
+    text-align: center; }
+  .my-projects .project-skeleton {
+    border: 2px black dashed;
+    margin: 0 25rem;
+    display: flex; }
+    .my-projects .project-skeleton .col-2-of-6 {
+      width: calc(((100% - 2 * 4rem) / 6 ) * 2);
+      margin-right: 4rem;
+      float: left;
+      border: 1px solid black;
+      flex: 2; }
+    .my-projects .project-skeleton .col-3-of-6 {
+      width: calc(((100% - 2 * 4rem) / 6 ) * 3);
+      margin-right: 4rem;
+      float: left;
+      border: 1px solid black;
+      flex: 3; }
+    .my-projects .project-skeleton .col-1-of-6 {
+      width: calc(((100% - 2 * 4rem) / 6 ) * 1);
+      float: left;
+      border: 1px solid black;
+      flex: 1;
+      max-height: 100%; }
+      .my-projects .project-skeleton .col-1-of-6 .project-logo {
+        border: 1px solid black;
+        height: calc((100% - 2rem ) / 2);
+        flex: 1; }
+        .my-projects .project-skeleton .col-1-of-6 .project-logo:not(:last-child) {
+          margin-bottom: 2rem; }
