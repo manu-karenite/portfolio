@@ -1,0 +1,64 @@
+.my-projects
+{
+    color:red;
+    background-color: purple;
+    font-size:4rem;
+    position: relative;
+    height: fit-content;
+    margin-top :2.5rem;
+ 
+    .project-header
+    {
+        text-align: center;
+        
+        
+    }
+    
+    .project-skeleton
+    {
+        border:2px black dashed;
+        margin : 0 25rem;
+        display: flex;
+
+        .col-2-of-6
+        {
+            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 2);
+            margin-right : 4rem;
+            float:left;
+            border : 1px solid black;
+            flex:2;
+        }
+        .col-3-of-6
+        {
+            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 3);
+            margin-right : 4rem;
+            float:left;
+            border : 1px solid black;
+            flex:3;
+        }
+        .col-1-of-6
+        {
+            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 1);
+           
+            float:left;
+            border : 1px solid black;
+            flex:1;
+            max-height: 100%;
+            .project-logo
+            {
+                border :1px solid black;
+                &:not(:last-child)
+                {
+                    margin-bottom:2rem;
+                }
+                height : calc((100% - 2rem ) / 2);
+                flex :1;
+                
+
+            }
+        }
+
+
+    }
+}
+
