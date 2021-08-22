@@ -24,7 +24,7 @@
             text-align: center;
             padding : 2.5rem;
             font-size: 7rem;
-            color:#ffb558;
+            color:$color-tertiary;
 
         }
         .education-detail
@@ -34,7 +34,7 @@
           margin : 3rem;
           .name-of-degree
           {
-              color: #FFB558;
+              color: $color-tertiary;
               display: inline-block;
             font-weight: bolder;
               line-height : 5rem;
@@ -42,7 +42,7 @@
           }
           .institute-name-and-passing {
 
-            color:#ffb558;
+            color:$color-tertiary;
             .institute{
                float :left;
                padding-left: 6rem;
