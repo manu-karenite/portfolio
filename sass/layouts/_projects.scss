@@ -1,49 +1,157 @@
 .my-projects
 {
-    color:red;
-    background-color: purple;
+    color:WHITE;
+    background-color: $color-tertiary;
     font-size:4rem;
     position: relative;
     height: fit-content;
     margin-top :2.5rem;
+    padding-bottom: 10rem;
  
     .project-header
     {
         text-align: center;
+        padding : 2.5rem 0 2.5rem 0;
+        font-weight: bolder;
+        font-family: 'Secular One', sans-serif;
+        letter-spacing: 0.5rem;
+        font-size: 7rem;
+        color:$color-match-jacket;
         
         
     }
     
     .project-skeleton
     {
-        border:2px black dashed;
+        border:0.5rem $color-match-jacket solid; 
+        border-radius: 2rem;
         margin : 0 25rem;
         display: flex;
+        &:not(:last-child)
+        {
+            margin-bottom: calc(5 * #{$project-main-skill-row-vert-gutter});
+        }
+        
 
         .col-2-of-6
         {
             width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 2);
-            margin-right : 4rem;
+            //margin-right : 4rem;
             float:left;
-            border : 1px solid black;
+            padding-bottom : 2rem;
+        
             flex:2;
+            .projects-image-and-link
+            {
+                .project-image 
+                {
+                    .u-format-project-snapshot
+                        {
+                            width :100%;
+                            padding :2rem;
+                        }
+                }
+                .projects-link 
+                {
+                    .col-1-of-2
+                    {
+                        width : calc((100% - 3 *  #{$project-main-skill-row-horz-gutter}) / 2);
+                        float : left;
+                        background-color: $color-match-jacket;
+                        margin-right: $project-main-skill-row-horz-gutter;
+                        padding :1rem;
+                        letter-spacing : 0.2rem;
+                        font-family : 'Jost' , 'sans-serif';
+                        font-weight : bold;
+                        text-align: center;
+                        border-radius : 0.5rem;
+                        &:not(:last-child)
+                        {
+                            margin-left: $project-main-skill-row-horz-gutter;
+                        }
+                        #link-vector
+                        {
+                           line-height: auto;
+                        }
+                            
+                    }
+                    
+                }
+            }
+            
         }
         .col-3-of-6
         {
             width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 3);
-            margin-right : 4rem;
+            //margin-right : 2rem;
             float:left;
             border : 1px solid black;
             flex:3;
+            background-color: $color-match-jacket;
+            .project-title
+            {
+                text-align: center;
+                margin : $project-main-skill-row-vert-gutter 0;
+                font-family: 'Secular One', sans-serif;
+                    word-spacing: 0.2rem;
+                    font-size : 5rem;
+            }
+            .tech-used
+            {
+                .row-of-3
+                {
+                
+                    padding: 0 2rem;                   
+                    .col-1-of-3
+                    {
+                        &:not(:last-child) 
+                        {
+                            margin-right : $project-main-skill-row-horz-gutter;
+                        }
+                        width : calc((100% - 2 * #{$project-main-skill-row-horz-gutter}) / 3 );
+                        float :left;
+                        margin-bottom : $project-main-skill-row-vert-gutter;
+                        text-align: center;
+                        background-color: $color-tertiary;
+                        border-radius : 0.5rem;
+                        padding :1rem;
+                        letter-spacing : 0.2rem;
+                        font-family : 'Jost' , 'sans-serif';
+                        font-weight : bold;
+                    }
+                    .long-names
+                    {
+                        font-size:100%;
+                    }
+                    .dummy
+                    {
+                        visibility: hidden;
+                    }
+                   
+                    
+                }
+                
+            }
+            .project-brief-description
+            {
+                clear:both;
+                content:"";
+                word-wrap :break-word;
+                font-family: 'Jost', sans-serif;
+                font-size:3rem;
+                padding:2rem;
+
+            }
         }
         .col-1-of-6
         {
             width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 1);
            
             float:left;
-            border : 1px solid black;
+            
             flex:1;
             max-height: 100%;
+            
             .project-logo
             {
                 border :1px solid black;
