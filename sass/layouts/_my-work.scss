@@ -13,7 +13,7 @@
         text-align: center;
         padding : 2.5rem;
         font-size: 7rem;
-        color:#ffb558;
+        color:$color-tertiary;
     }
     .work-detail
     {
@@ -29,7 +29,7 @@
 
             .organization-name
             {
-                color:#ffb558;
+                color:$color-tertiary;
                 font-weight : bolder;
                 line-height:5rem;
                 height:5rem;
@@ -48,7 +48,7 @@
                     font-family: 'Secular One', sans-serif;
                     word-spacing: 0.2rem;
                     font-size : 3rem;
-                    color : #ffb558;
+                    color : $color-tertiary;
                     padding-left :6rem;
 
                 }
@@ -59,7 +59,7 @@
                     font-family: 'Secular One', sans-serif;
                     word-spacing: 0.2rem;
                     font-size : 3rem;
-                    color : #ffb558;
+                    color : $color-tertiary;
                     padding-left :6rem;
                     
                 }
@@ -94,7 +94,7 @@
                font-family: 'Secular One', sans-serif;
                 word-spacing: 0.2rem;
                 font-size : 3rem;
-                color : #ffb558;
+                color : $color-tertiary;
                 letter-spacing : 0.2rem;
                 padding : 1rem 0;
                
