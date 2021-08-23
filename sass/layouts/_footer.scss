@@ -1,0 +1,49 @@
+footer
+{
+    
+    background-color: black;
+        color:white;
+        font-size: 4rem;
+    .footer-outer
+    {
+        max-width:114rem;
+        .footer-name
+        {
+            text-align: center;
+            @include footer-style-text;
+            font-family: 'Jost', sans-serif;
+            letter-spacing: 3px;
+            margin : 2rem 0;
+          
+        }
+        .footer-links
+        {
+          .col-1-of-3
+          {
+             
+              &:not(:last-child)
+              {
+                  margin-right: $project-main-skill-row-horz-gutter;
+                  width : calc((100% -  2 * #{$project-main-skill-row-horz-gutter}) / 3 );
+                  
+              }
+              float:left;
+             
+          }
+          
+        }
+        .footer-release
+        {
+            text-align: center;
+              @include footer-style-text;
+              font-family: 'Jost', sans-serif;
+            letter-spacing: 3px;
+            margin : 2rem 0;
+              
+              
+        }
+   
+    }
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
