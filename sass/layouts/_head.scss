@@ -34,6 +34,8 @@
         {
           margin-right: 0;
         }
+        
+        
       }
   }
 }
@@ -53,11 +55,14 @@
       transform: translateY(-1rem) scaleX(1.2) scaleY(1.2);
 
     }
+  
+
 }
 .middleBox__links--link1
 {
   animation-name:logo-transition;
   animation-duration: all 0.2s;
+  
 }
 
 .portfolio-img
