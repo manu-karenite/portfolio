@@ -1,0 +1,9 @@
+@mixin footer-style-text
+{
+    background-image: linear-gradient(to right top, #e0a433, #cfb310, #b4c200, #8cd200, #44e023);
+            display:inline-block;
+            -webkit-background-clip: text;
+            color:transparent;
+            background-clip: text;
+}
+
