@@ -389,7 +389,8 @@ body {
         font-family: 'Jost' , 'sans-serif';
         font-weight: bold;
         text-align: center;
-        border-radius: 0.5rem; }
+        border-radius: 0.5rem;
+        box-shadow: 0 1rem 2rem rgba(47, 46, 65, 0.8); }
         .my-projects .project-skeleton .col-2-of-6 .projects-image-and-link .projects-link .col-1-of-2:not(:last-child) {
           margin-left: 2rem; }
         .my-projects .project-skeleton .col-2-of-6 .projects-image-and-link .projects-link .col-1-of-2 #link-vector {
@@ -443,3 +444,37 @@ body {
         flex: 1; }
         .my-projects .project-skeleton .col-1-of-6 .project-logo:not(:last-child) {
           margin-bottom: 2rem; }
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 4rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem; }
+  footer .footer-outer {
+    max-width: 114rem; }
+    footer .footer-outer .footer-name {
+      text-align: center;
+      background-image: linear-gradient(to right top, #e0a433, #cfb310, #b4c200, #8cd200, #44e023);
+      display: inline-block;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-clip: text;
+      font-family: 'Jost', sans-serif;
+      letter-spacing: 3px;
+      margin: 2rem 0; }
+    footer .footer-outer .footer-links .col-1-of-3 {
+      float: left; }
+      footer .footer-outer .footer-links .col-1-of-3:not(:last-child) {
+        margin-right: 2rem;
+        width: calc((100% -  2 * 2rem) / 3); }
+    footer .footer-outer .footer-release {
+      text-align: center;
+      background-image: linear-gradient(to right top, #e0a433, #cfb310, #b4c200, #8cd200, #44e023);
+      display: inline-block;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-clip: text;
+      font-family: 'Jost', sans-serif;
+      letter-spacing: 3px;
+      margin: 2rem 0; }
