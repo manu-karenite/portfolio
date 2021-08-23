@@ -23,6 +23,7 @@
     
     .project-skeleton
     {
+        
         border:0.5rem $color-match-jacket solid; 
         border-radius: 2rem;
         margin : 0 25rem;
@@ -65,6 +66,8 @@
                         font-weight : bold;
                         text-align: center;
                         border-radius : 0.5rem;
+                        box-shadow: 0 1rem 2rem rgba($color-match-jacket ,0.8);
+                        
                         &:not(:last-child)
                         {
                             margin-left: $project-main-skill-row-horz-gutter;
@@ -75,6 +78,7 @@
                         }
                             
                     }
+                   
                     
                 }
             }
