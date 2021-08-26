@@ -92,7 +92,7 @@ body {
   height: 12rem; }
 
 .page-head {
-  height: 70vh;
+  height: auto;
   background-color: #1a2c56;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
@@ -190,40 +190,38 @@ body {
   z-index: -1;
   padding-top: 15rem;
   padding-bottom: 25rem; }
-  .about-career .my-education {
-    position: relative; }
-    .about-career .my-education .my-education-header {
+  .about-career .my-education .my-education-header {
+    font-weight: bolder;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 0.5rem;
+    left: 50%;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 7rem;
+    color: #ffb558; }
+  .about-career .my-education .education-detail {
+    padding: 0 20rem 0 20rem;
+    display: block;
+    margin: 3rem; }
+    .about-career .my-education .education-detail .name-of-degree {
+      color: #ffb558;
+      display: inline-block;
       font-weight: bolder;
-      font-family: 'Secular One', sans-serif;
-      letter-spacing: 0.5rem;
-      left: 50%;
-      text-align: center;
-      padding: 2.5rem;
-      font-size: 7rem;
+      line-height: 5rem;
+      height: 5rem; }
+    .about-career .my-education .education-detail .institute-name-and-passing {
       color: #ffb558; }
-    .about-career .my-education .education-detail {
-      padding: 0 20rem 0 20rem;
-      display: block;
-      margin: 3rem; }
-      .about-career .my-education .education-detail .name-of-degree {
-        color: #ffb558;
-        display: inline-block;
-        font-weight: bolder;
-        line-height: 5rem;
-        height: 5rem; }
-      .about-career .my-education .education-detail .institute-name-and-passing {
-        color: #ffb558; }
-        .about-career .my-education .education-detail .institute-name-and-passing .institute {
-          float: left;
-          padding-left: 6rem; }
-        .about-career .my-education .education-detail .institute-name-and-passing .passing {
-          float: right; }
-      .about-career .my-education .education-detail .course-description {
-        margin-top: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        word-wrap: break-word;
-        font-family: 'Jost', sans-serif; }
+      .about-career .my-education .education-detail .institute-name-and-passing .institute {
+        float: left;
+        padding-left: 6rem; }
+      .about-career .my-education .education-detail .institute-name-and-passing .passing {
+        float: right; }
+    .about-career .my-education .education-detail .course-description {
+      margin-top: 2rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      word-wrap: break-word;
+      font-family: 'Jost', sans-serif; }
 
 .my-work {
   padding-bottom: 8rem;
