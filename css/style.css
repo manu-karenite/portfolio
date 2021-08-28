@@ -239,12 +239,12 @@ phone : upto 600px
       font-size: 7rem;
       color: #ffb558; }
     .about-career .my-education .education-detail {
-      padding: 0 15rem 0 15rem;
+      padding: 0 15rem 5rem 15rem;
       display: block;
       margin: 3rem; }
       @media screen and (max-width: 75em) {
         .about-career .my-education .education-detail {
-          padding: 0 1rem 0 1rem;
+          padding: 0 1rem 3rem 1rem;
           margin: 0 2rem; } }
       .about-career .my-education .education-detail .name-of-degree {
         color: #ffb558;
@@ -265,7 +265,9 @@ phone : upto 600px
         padding-left: 4rem;
         padding-right: 4rem;
         word-wrap: break-word;
-        font-family: 'Jost', sans-serif; }
+        font-family: 'Jost', sans-serif;
+        clear: both;
+        content: ""; }
 
 .my-work {
   padding-bottom: 8rem;
@@ -276,7 +278,7 @@ phone : upto 600px
     letter-spacing: 0.5rem;
     left: 50%;
     text-align: center;
-    padding: 2.5rem;
+    padding: 2.5rem 2.5rem 1.75rem 2.5rem;
     font-size: 7rem;
     color: #ffb558; }
   .my-work .my-work-experience .work-detail {
@@ -316,6 +318,8 @@ phone : upto 600px
         color: #ffb558;
         padding-left: 6rem; }
       .my-work .my-work-experience .work-detail .col-3-of-4 .work-description {
+        clear: both;
+        content: "";
         margin-top: 2rem;
         padding-left: 4rem;
         padding-right: 4rem;

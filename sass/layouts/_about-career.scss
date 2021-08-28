@@ -43,10 +43,10 @@
         }
         .education-detail
         {
-          padding: 0 15rem 0 15rem;
+          padding: 0 15rem 5rem 15rem;
           @include respond(tab-land)
           {
-            padding : 0 1rem 0 1rem;
+            padding : 0 1rem 3rem 1rem;
             margin : 0 2rem;
           }
           display: block;
@@ -78,6 +78,9 @@
                 padding-left : 4rem ; padding-right : 4rem;
                 word-wrap :break-word;
                 font-family: 'Jost', sans-serif;
+                clear:both;
+                content: "";
+                
                 }
         }
 
