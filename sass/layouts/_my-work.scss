@@ -18,7 +18,11 @@
     .work-detail
     {
         
-        padding: 0 20rem 3rem 20rem;
+        padding: 0 15rem 3rem 15rem;
+        @include respond(tab-land)
+          {
+            padding : 0 1rem 0 1rem;
+          }
           margin : 5rem;
 
         .col-3-of-4

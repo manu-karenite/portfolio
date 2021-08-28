@@ -12,7 +12,19 @@
     margin-top:-20rem;
     z-index: -1;
     padding-top : 15rem;
-    padding-bottom : 25rem; //becayuse we have pust -20 rem top
+    padding-bottom : 30rem; //becayuse we have pust -20 rem top
+    @include respond(phone)
+    {
+      padding-bottom: 50rem;
+    }
+    @include respond(tab-port)
+    {
+      padding-bottom: 45rem;
+    }
+    @include respond(tab-land)
+    {
+      padding-bottom: 40rem;
+    }
     .my-education
     {
       position: relative;
@@ -31,7 +43,12 @@
         }
         .education-detail
         {
-          padding: 0 20rem 0 20rem;
+          padding: 0 15rem 0 15rem;
+          @include respond(tab-land)
+          {
+            padding : 0 1rem 0 1rem;
+            margin : 0 2rem;
+          }
           display: block;
           margin : 3rem;
           .name-of-degree
