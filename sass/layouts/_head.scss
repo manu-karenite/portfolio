@@ -6,6 +6,7 @@
   transform: translate(-50%,-60%);
   max-width : 114rem;
   height : auto;
+ 
 
   &__imageAndName
   {
@@ -14,6 +15,16 @@
     {
       margin-right: $gutter-horizontal;
       float:left;
+      @include respond(phone)
+      {
+        float:none;
+        margin-right: 0;
+      }
+      @include respond(tab-port)
+      {
+        float:none;
+        margin-right: 0;
+      }
     }
     &--name
     {
