@@ -407,10 +407,16 @@ phone : upto 600px
     z-index: 1;
     opacity: 1; } }
 
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
 .my-projects {
   color: WHITE;
   background-color: #ffb558;
-  font-size: 4rem;
+  font-size: 2.5rem;
   position: relative;
   height: fit-content;
   margin-top: 2.5rem;
@@ -428,17 +434,20 @@ phone : upto 600px
     border-radius: 2rem;
     margin: 0 25rem;
     display: flex; }
+    @media screen and (max-width: 56.25em) {
+      .my-projects .project-skeleton {
+        margin: 0 2rem; } }
     .my-projects .project-skeleton:not(:last-child) {
       margin-bottom: calc(5 * 2rem); }
-    .my-projects .project-skeleton .col-2-of-6 {
-      width: calc(((100% - 2 * 4rem) / 6 ) * 2);
+    .my-projects .project-skeleton .col-2-of-5 {
+      width: calc(((100% - 2 * 4rem) / 5 ) * 2);
       float: left;
       padding-bottom: 2rem;
       flex: 2; }
-      .my-projects .project-skeleton .col-2-of-6 .projects-image-and-link .project-image .u-format-project-snapshot {
+      .my-projects .project-skeleton .col-2-of-5 .projects-image-and-link .project-image .u-format-project-snapshot {
         width: 100%;
         padding: 2rem; }
-      .my-projects .project-skeleton .col-2-of-6 .projects-image-and-link .projects-link .col-1-of-2 {
+      .my-projects .project-skeleton .col-2-of-5 .projects-image-and-link .projects-link .col-1-of-2 {
         width: calc((100% - 3 *  2rem) / 2);
         float: left;
         background-color: #2f2e41;
@@ -449,26 +458,26 @@ phone : upto 600px
         font-weight: bold;
         text-align: center;
         border-radius: 0.5rem;
-        box-shadow: 0 1rem 2rem rgba(47, 46, 65, 0.8); }
-        .my-projects .project-skeleton .col-2-of-6 .projects-image-and-link .projects-link .col-1-of-2:not(:last-child) {
+        box-shadow: 0 1rem 2rem rgba(47, 46, 65, 0.8);
+        text-decoration: none; }
+        .my-projects .project-skeleton .col-2-of-5 .projects-image-and-link .projects-link .col-1-of-2:not(:last-child) {
           margin-left: 2rem; }
-        .my-projects .project-skeleton .col-2-of-6 .projects-image-and-link .projects-link .col-1-of-2 #link-vector {
-          line-height: auto; }
-    .my-projects .project-skeleton .col-3-of-6 {
-      width: calc(((100% - 2 * 4rem) / 6 ) * 3);
-      float: left;
+    .my-projects .project-skeleton .col-3-of-5 {
       border: 0.1rem solid black;
       flex: 3;
       background-color: #2f2e41; }
-      .my-projects .project-skeleton .col-3-of-6 .project-title {
+      .my-projects .project-skeleton .col-3-of-5 .project-title {
         text-align: center;
         margin: 2rem 0;
         font-family: 'Secular One', sans-serif;
         word-spacing: 0.2rem;
-        font-size: 5rem; }
-      .my-projects .project-skeleton .col-3-of-6 .tech-used .row-of-3 {
+        font-size: 4rem; }
+        @media screen and (max-width: 37.5em) {
+          .my-projects .project-skeleton .col-3-of-5 .project-title {
+            font-size: 3rem; } }
+      .my-projects .project-skeleton .col-3-of-5 .tech-used .row-of-3 {
         padding: 0 2rem; }
-        .my-projects .project-skeleton .col-3-of-6 .tech-used .row-of-3 .col-1-of-3 {
+        .my-projects .project-skeleton .col-3-of-5 .tech-used .row-of-3 .col-1-of-3 {
           width: calc((100% - 2 * 2rem) / 3);
           float: left;
           margin-bottom: 2rem;
@@ -479,30 +488,17 @@ phone : upto 600px
           letter-spacing: 0.2rem;
           font-family: 'Jost' , 'sans-serif';
           font-weight: bold; }
-          .my-projects .project-skeleton .col-3-of-6 .tech-used .row-of-3 .col-1-of-3:not(:last-child) {
+          .my-projects .project-skeleton .col-3-of-5 .tech-used .row-of-3 .col-1-of-3:not(:last-child) {
             margin-right: 2rem; }
-        .my-projects .project-skeleton .col-3-of-6 .tech-used .row-of-3 .long-names {
-          font-size: 100%; }
-        .my-projects .project-skeleton .col-3-of-6 .tech-used .row-of-3 .dummy {
+        .my-projects .project-skeleton .col-3-of-5 .tech-used .row-of-3 .dummy {
           visibility: hidden; }
-      .my-projects .project-skeleton .col-3-of-6 .project-brief-description {
+      .my-projects .project-skeleton .col-3-of-5 .project-brief-description {
         clear: both;
         content: "";
         word-wrap: break-word;
         font-family: 'Jost', sans-serif;
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 2rem; }
-    .my-projects .project-skeleton .col-1-of-6 {
-      width: calc(((100% - 2 * 4rem) / 6 ) * 1);
-      float: left;
-      flex: 1;
-      max-height: 100%; }
-      .my-projects .project-skeleton .col-1-of-6 .project-logo {
-        border: 0.1rem solid black;
-        height: calc((100% - 2rem ) / 2);
-        flex: 1; }
-        .my-projects .project-skeleton .col-1-of-6 .project-logo:not(:last-child) {
-          margin-bottom: 2rem; }
 
 footer {
   background-color: black;

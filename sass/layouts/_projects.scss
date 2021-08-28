@@ -1,8 +1,9 @@
+@import "../abstract/mixins";
 .my-projects
 {
     color:WHITE;
     background-color: $color-tertiary;
-    font-size:4rem;
+    font-size:2.5rem;
     position: relative;
     height: fit-content;
     margin-top :2.5rem;
@@ -27,6 +28,10 @@
         border:0.5rem $color-match-jacket solid; 
         border-radius: 2rem;
         margin : 0 25rem;
+        @include respond(tab-port)
+        {
+            margin : 0 2rem;
+        }
         display: flex;
         &:not(:last-child)
         {
@@ -34,11 +39,12 @@
         }
         
 
-        .col-2-of-6
+        .col-2-of-5
         {
-            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 2);
+            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 5 ) * 2);
             //margin-right : 4rem;
             float:left;
+
             padding-bottom : 2rem;
         
             flex:2;
@@ -67,28 +73,25 @@
                         text-align: center;
                         border-radius : 0.5rem;
                         box-shadow: 0 1rem 2rem rgba($color-match-jacket ,0.8);
+                       text-decoration: none;
                         
                         &:not(:last-child)
                         {
                             margin-left: $project-main-skill-row-horz-gutter;
                         }
-                        #link-vector
-                        {
-                           line-height: auto;
-                        }
+                        
                             
                     }
                    
                     
                 }
             }
+         
             
         }
-        .col-3-of-6
+        .col-3-of-5
         {
-            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 3);
-            //margin-right : 2rem;
-            float:left;
+          
             border : 0.1rem solid black;
             flex:3;
             background-color: $color-match-jacket;
@@ -98,7 +101,11 @@
                 margin : $project-main-skill-row-vert-gutter 0;
                 font-family: 'Secular One', sans-serif;
                     word-spacing: 0.2rem;
-                    font-size : 5rem;
+                    font-size : 4rem;
+                    @include respond(phone)
+                    {
+                        font-size:3rem;
+                    }
             }
             .tech-used
             {
@@ -123,10 +130,7 @@
                         font-family : 'Jost' , 'sans-serif';
                         font-weight : bold;
                     }
-                    .long-names
-                    {
-                        font-size:100%;
-                    }
+                    
                     .dummy
                     {
                         visibility: hidden;
@@ -142,33 +146,13 @@
                 content:"";
                 word-wrap :break-word;
                 font-family: 'Jost', sans-serif;
-                font-size:3rem;
+                font-size:2.5rem;
                 padding:2rem;
 
             }
+        
         }
-        .col-1-of-6
-        {
-            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 1);
-           
-            float:left;
-            
-            flex:1;
-            max-height: 100%;
-            
-            .project-logo
-            {
-                border :0.1rem solid black;
-                &:not(:last-child)
-                {
-                    margin-bottom:2rem;
-                }
-                height : calc((100% - 2rem ) / 2);
-                flex :1;
-                
-
-            }
-        }
+        
 
 
     }
