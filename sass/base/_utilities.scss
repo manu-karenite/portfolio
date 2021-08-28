@@ -6,6 +6,16 @@
   letter-spacing: $letter-space;
   text-align: center;
   padding: 1.3rem 1rem;
+  @include respond(phone)
+  {
+    letter-spacing: 0;
+    font-size:4rem;
+  }
+  @include respond(tab-port)
+  {
+    letter-spacing: 0;
+    font-size:4.75rem;
+  }
 }
 
 .u-format-skills
