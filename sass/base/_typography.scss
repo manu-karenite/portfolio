@@ -1,7 +1,7 @@
 
 .page-head {
   height: 70vh;
- 
+ position: relative;
   background-color: $color-primary;
   position : relative;
     clip-path : polygon( 0 0 , 100% 0 , 100% 85% , 0 100%);
@@ -22,11 +22,18 @@
 .firstName {
   animation-name: firstName-TtoB;
   animation-duration: 2s;
+ 
+  
+ 
+ 
 }
 .lastName {
   animation-name: lastName-BtoT;
   animation-duration: 2s;
-  border-top: solid $color-secondary 0.5rem;
+  
+  
+  
+ 
 }
 
 .content-about-me
