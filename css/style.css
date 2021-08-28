@@ -49,6 +49,14 @@ body {
   letter-spacing: 0.4rem;
   text-align: center;
   padding: 1.3rem 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .u-name-formatting {
+      letter-spacing: 0;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
+    .u-name-formatting {
+      letter-spacing: 0;
+      font-size: 4.75rem; } }
 
 .u-format-skills {
   background-color: #2f2e41;
@@ -76,28 +84,58 @@ body {
   top: 50%;
   position: absolute;
   transform: translate(-50%, -60%);
-  max-width: 114rem;
-  height: auto; }
-  .middleBox__imageAndName--image {
-    margin-right: 4rem;
+  max-width: 114rem; }
+  .middleBox__imageAndName .image-outer {
+    float: left;
+    margin-right: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .middleBox__imageAndName .image-outer {
+      float: none;
+      margin-right: 0; }
+      .middleBox__imageAndName .image-outer .middleBox__imageAndName--image .portfolio-img {
+        display: block;
+        margin: auto; } }
+  @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
+    .middleBox__imageAndName .image-outer {
+      float: none;
+      margin-right: 0; }
+      .middleBox__imageAndName .image-outer .middleBox__imageAndName--image .portfolio-img {
+        display: block;
+        margin: auto; } }
+  .middleBox__imageAndName .middleBox__imageAndName--name {
     float: left; }
+  .middleBox__links {
+    clear: both;
+    content: ""; }
+    .middleBox__links .col-1-of-4 {
+      margin-top: 6rem;
+      margin-right: 4rem;
+      width: calc((100% - 3 * 4rem) / 4);
+      float: left;
+      animation-name: logo-transition;
+      animation-duration: all 0.2s; }
+      .middleBox__links .col-1-of-4:not(:last-child) {
+        margin-right: 0rem; }
+      @media only screen and (max-width: 37.5em) {
+        .middleBox__links .col-1-of-4 {
+          width: calc((100% - 1 * 4rem) / 2); } }
+      @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
+        .middleBox__links .col-1-of-4 {
+          width: calc((100% - 1 * 4rem) / 2); } }
     @media only screen and (max-width: 37.5em) {
-      .middleBox__imageAndName--image {
-        float: none;
+      .middleBox__links .middleBox__links--link4, .middleBox__links .middleBox__links--link2 {
         margin-right: 0; } }
     @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
-      .middleBox__imageAndName--image {
-        float: none;
+      .middleBox__links .middleBox__links--link4, .middleBox__links .middleBox__links--link2 {
         margin-right: 0; } }
-  .middleBox__imageAndName--name {
-    float: left; }
-  .middleBox__links .col-1-of-4 {
-    margin-top: 6rem;
-    margin-right: 4rem;
-    width: calc((100% - 3 * 4rem) / 4);
-    float: left; }
-    .middleBox__links .col-1-of-4:last-child {
-      margin-right: 0; }
+
+.portfolio-img {
+  border-radius: 10rem;
+  border: solid 0.5rem #fff;
+  padding: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .portfolio-img {
+      margin-left: 3rem; } }
 
 #img-logo {
   display: block;
@@ -110,28 +148,25 @@ body {
     cursor: pointer;
     transform: translateY(-1rem) scaleX(1.2) scaleY(1.2); }
 
-.middleBox__links--link1 {
-  animation-name: logo-transition;
-  animation-duration: all 0.2s; }
-
-.portfolio-img {
-  border-radius: 10rem;
-  border: solid 0.5rem #fff;
-  padding: 1rem; }
-
 .links-section {
   max-width: 114rem;
   border: 0.1rem white solid; }
 
 .portfolio-img {
-  width: 20rem;
-  height: 21rem; }
+  width: 20rem; }
+  @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
+    .portfolio-img {
+      width: 18rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .portfolio-img {
+      width: 16rem; } }
 
 .img-logo-class {
   height: 12rem; }
 
 .page-head {
   height: 70vh;
+  position: relative;
   background-color: #1a2c56;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
@@ -153,8 +188,7 @@ body {
 
 .lastName {
   animation-name: lastName-BtoT;
-  animation-duration: 2s;
-  border-top: solid #d1a683 0.5rem; }
+  animation-duration: 2s; }
 
 .content-about-me {
   background-color: #2f2e41;
@@ -302,7 +336,7 @@ phone : upto 600px
       padding: 0 15rem 5rem 15rem;
       display: block;
       margin: 3rem; }
-      @media only screen and (min-width: 56.26rem) {
+      @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
         .about-career .my-education .education-detail {
           padding: 0 1rem 3rem 1rem;
           margin: 0 2rem; } }
@@ -463,8 +497,7 @@ phone : upto 600px
     border: none; }
   100% {
     transform: translateY(0rem);
-    opacity: 1;
-    border-top: solid #d1a683 0.5rem; } }
+    opacity: 1; } }
 
 @keyframes logo-transition {
   0% {
