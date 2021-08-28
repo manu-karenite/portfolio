@@ -1,6 +1,6 @@
 .my-work
 {
-   padding-bottom: 8rem;
+   padding-bottom: 12rem;
     position: relative;
     .my-work-experience
 {
@@ -30,6 +30,10 @@
             float : left;
             margin-right: $work-gutter;
             width : calc(((100% - #{$work-gutter} ) / 4 ) * 3 );
+            @include respond(phone)
+            {
+                width : 100%;
+            }
 
             .organization-name
             {
@@ -104,7 +108,13 @@
                 padding : 1rem 0;
                
            }
+           @include respond(phone)
+           {
+               display: none;
+           }
         }
+        clear : both;
+                content: "";
        
     }
 }

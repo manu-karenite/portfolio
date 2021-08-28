@@ -270,7 +270,7 @@ phone : upto 600px
         content: ""; }
 
 .my-work {
-  padding-bottom: 8rem;
+  padding-bottom: 12rem;
   position: relative; }
   .my-work .my-work-experience .my-work-header {
     font-weight: bolder;
@@ -283,7 +283,9 @@ phone : upto 600px
     color: #ffb558; }
   .my-work .my-work-experience .work-detail {
     padding: 0 15rem 3rem 15rem;
-    margin: 5rem; }
+    margin: 5rem;
+    clear: both;
+    content: ""; }
     @media screen and (max-width: 75em) {
       .my-work .my-work-experience .work-detail {
         padding: 0 1rem 0 1rem; } }
@@ -291,6 +293,9 @@ phone : upto 600px
       float: left;
       margin-right: 4rem;
       width: calc(((100% - 4rem ) / 4 ) * 3); }
+      @media screen and (max-width: 37.5em) {
+        .my-work .my-work-experience .work-detail .col-3-of-4 {
+          width: 100%; } }
       .my-work .my-work-experience .work-detail .col-3-of-4 .organization-name {
         color: #ffb558;
         font-weight: bolder;
@@ -341,6 +346,9 @@ phone : upto 600px
         color: #ffb558;
         letter-spacing: 0.2rem;
         padding: 1rem 0; }
+      @media screen and (max-width: 37.5em) {
+        .my-work .my-work-experience .work-detail .col-1-of-4 {
+          display: none; } }
 
 #organization-logo, .organization-img {
   height: 18rem;
