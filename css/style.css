@@ -11,11 +11,13 @@ phone : upto 600px
   margin: 0rem;
   padding: 0rem;
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  /*background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;*/ }
 
 html {
-  font-size: 50%;
-  width: 100%; }
+  font-size: 50%; }
   @media screen and (max-width: 75em) {
     html {
       font-size: 40%; } }
@@ -332,9 +334,6 @@ phone : upto 600px
         font-family: 'Jost', sans-serif;
         text-justify: auto;
         padding-top: 4rem; }
-        @media screen and (max-width: 37.5em) {
-          .my-work .my-work-experience .work-detail .col-3-of-4 .work-description {
-            margin-bottom: 0rem; } }
     .my-work .my-work-experience .work-detail .col-1-of-4 {
       float: left;
       width: calc(((100% - 4rem ) / 4 ) *  1);
