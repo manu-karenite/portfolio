@@ -7,3 +7,38 @@
             background-clip: text;
 }
 
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
+@mixin respond($parameter)
+{
+    @if $parameter == tab-land
+    {
+        @media screen and (max-width : 75em) {
+            @content    
+        };
+    }
+    @if $parameter == tab-port
+    {
+        @media screen and (max-width : 56.25em) {
+            @content    
+        };
+    }
+    
+    @if  $parameter == phone
+    {
+        @media screen and (max-width : 37.5) {
+            @content    
+        };
+    }
+    
+    @if $parameter == big-device
+    {
+        @media screen and (min-width : 112.5em) {
+            @content    
+        };
+    }
+}
