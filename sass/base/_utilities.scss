@@ -24,6 +24,11 @@
 .u-center-img-wrt-parent
 {
   margin : 0 auto;
+  @include respond(phone)
+  {
+    position: relative;
+    display:none;
+  }
 }
 
 .u-no-decoration
