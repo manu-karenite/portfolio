@@ -1,4 +1,10 @@
 /*Universal Selector*/
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
 *,
 *::before,
 *::after {
@@ -9,10 +15,25 @@
 
 html {
   font-size: 50%; }
+  @media screen and (max-width: 75em) {
+    html {
+      font-size: 40%; } }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 35%; } }
+  @media screen and (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media screen and (min-width: 112.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   box-sizing: border-box;
   padding: 2.5rem; }
+  @media screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .u-name-formatting {
   font-weight: bold;
@@ -178,6 +199,12 @@ body {
   .row-about-me .col-1-of-3:not(:last-child) {
     margin-right: 1.5rem; }
 
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/
 .about-career {
   /*Miscc Setings*/
   color: #fff;
@@ -217,7 +244,8 @@ body {
           float: left;
           padding-left: 6rem; }
         .about-career .my-education .education-detail .institute-name-and-passing .passing {
-          float: right; }
+          float: right;
+          font-size: 3rem; }
       .about-career .my-education .education-detail .course-description {
         margin-top: 2rem;
         padding-left: 4rem;
@@ -398,7 +426,7 @@ body {
     .my-projects .project-skeleton .col-3-of-6 {
       width: calc(((100% - 2 * 4rem) / 6 ) * 3);
       float: left;
-      border: 1px solid black;
+      border: 0.1rem solid black;
       flex: 3;
       background-color: #2f2e41; }
       .my-projects .project-skeleton .col-3-of-6 .project-title {
@@ -439,7 +467,7 @@ body {
       flex: 1;
       max-height: 100%; }
       .my-projects .project-skeleton .col-1-of-6 .project-logo {
-        border: 1px solid black;
+        border: 0.1rem solid black;
         height: calc((100% - 2rem ) / 2);
         flex: 1; }
         .my-projects .project-skeleton .col-1-of-6 .project-logo:not(:last-child) {
@@ -478,3 +506,10 @@ footer {
       font-family: 'Jost', sans-serif;
       letter-spacing: 3px;
       margin: 2rem 0; }
+
+/*
+big-device : above 1800px
+tab-land : 1200 px
+tab-port : upto 900px
+phone : upto 600px
+*/

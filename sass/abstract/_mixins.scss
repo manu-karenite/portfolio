@@ -17,20 +17,20 @@ phone : upto 600px
 {
     @if $parameter == tab-land
     {
-        @media screen and (max-width : 75em) {
+        @media screen and (max-width : 75em) { //1200
             @content    
         };
     }
     @if $parameter == tab-port
     {
-        @media screen and (max-width : 56.25em) {
+        @media screen and (max-width : 56.25em) {//900
             @content    
         };
     }
     
     @if  $parameter == phone
     {
-        @media screen and (max-width : 37.5) {
+        @media screen and (max-width : 37.5em) { //600
             @content    
         };
     }

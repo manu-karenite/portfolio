@@ -1,3 +1,4 @@
+@import "../abstract/mixins";
 .about-career
 {
   
@@ -51,6 +52,7 @@
             .passing
             {
                 float:right;
+                font-size :3rem;
             }
               }
               .course-description

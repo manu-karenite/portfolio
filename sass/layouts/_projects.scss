@@ -89,7 +89,7 @@
             width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 6 ) * 3);
             //margin-right : 2rem;
             float:left;
-            border : 1px solid black;
+            border : 0.1rem solid black;
             flex:3;
             background-color: $color-match-jacket;
             .project-title
@@ -158,7 +158,7 @@
             
             .project-logo
             {
-                border :1px solid black;
+                border :0.1rem solid black;
                 &:not(:last-child)
                 {
                     margin-bottom:2rem;
