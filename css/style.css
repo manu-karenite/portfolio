@@ -240,6 +240,9 @@ phone : upto 600px
       padding: 2.5rem;
       font-size: 7rem;
       color: #ffb558; }
+      @media only screen and (max-width: 37.5em) {
+        .about-career .my-education .my-education-header {
+          font-size: 5rem; } }
     .about-career .my-education .education-detail {
       padding: 0 15rem 5rem 15rem;
       display: block;
@@ -286,14 +289,20 @@ phone : upto 600px
     padding: 2.5rem 2.5rem 1.75rem 2.5rem;
     font-size: 7rem;
     color: #ffb558; }
+    @media only screen and (max-width: 37.5em) {
+      .my-work .my-work-experience .my-work-header {
+        font-size: 5rem; } }
   .my-work .my-work-experience .work-detail {
     padding: 0 15rem 3rem 15rem;
     margin: 5rem;
     clear: both;
     content: ""; }
-    @media only screen and (min-width: 56.26rem) {
+    @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
       .my-work .my-work-experience .work-detail {
-        padding: 0 1rem 0 1rem; } }
+        padding: 0 1rem 3rem 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .my-work .my-work-experience .work-detail {
+        padding: 0 1rem 3rem 1rem; } }
     .my-work .my-work-experience .work-detail .col-3-of-4 {
       float: left;
       margin-right: 4rem;
@@ -432,6 +441,9 @@ phone : upto 600px
     letter-spacing: 0.5rem;
     font-size: 7rem;
     color: #2f2e41; }
+    @media only screen and (max-width: 37.5em) {
+      .my-projects .project-header {
+        font-size: 5rem; } }
 
 @media only screen and (max-width: 37.5em) and (max-width: 37.5em) {
   .my-projects .project-skeleton {
@@ -468,7 +480,7 @@ phone : upto 600px
         text-align: center;
         font-family: 'Secular One', sans-serif;
         word-spacing: 0.2rem;
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
         clear: both;
         content: ""; }

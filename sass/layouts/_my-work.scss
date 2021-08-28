@@ -13,15 +13,23 @@
         text-align: center;
         padding : 2.5rem 2.5rem 1.75rem 2.5rem;
         font-size: 7rem;
+        @include respond(phone)
+        {
+          font-size:5rem;
+        }
         color:$color-tertiary;
     }
     .work-detail
     {
         
         padding: 0 15rem 3rem 15rem;
-        @include respond(tab-land)
+        @include respond(tab-port)
           {
-            padding : 0 1rem 0 1rem;
+            padding : 0 1rem 3rem 1rem;
+          }
+          @include respond(phone)
+          {
+            padding : 0 1rem 3rem 1rem;
           }
           margin : 5rem;
 
