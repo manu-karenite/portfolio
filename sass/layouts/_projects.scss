@@ -1,4 +1,6 @@
 @import "../abstract/mixins";
+@import "../abstract/phone_project";
+@import "../abstract/other_project.scss";
 .my-projects
 {
     color:WHITE;
@@ -7,7 +9,8 @@
     position: relative;
     height: fit-content;
     margin-top :2.5rem;
-    padding-bottom: 10rem;
+    //padding-bottom: 10rem;
+    padding : 0rem 5rem 10rem 5rem;
  
     .project-header
     {
@@ -21,140 +24,20 @@
         
         
     }
-    
-    .project-skeleton
+    @include respond(phone)
     {
-        
-        border:0.5rem $color-match-jacket solid; 
-        border-radius: 2rem;
-        margin : 0 25rem;
-        @include respond(tab-port)
-        {
-            margin : 0 2rem;
-        }
-        display: flex;
-        &:not(:last-child)
-        {
-            margin-bottom: calc(5 * #{$project-main-skill-row-vert-gutter});
-        }
-        
-
-        .col-2-of-5
-        {
-            width : calc(((100% - 2 * #{$projects-gutter-horizontal}) / 5 ) * 2);
-            //margin-right : 4rem;
-            float:left;
-
-            padding-bottom : 2rem;
-        
-            flex:2;
-            .projects-image-and-link
-            {
-                .project-image 
-                {
-                    .u-format-project-snapshot
-                        {
-                            width :100%;
-                            padding :2rem;
-                        }
-                }
-                .projects-link 
-                {
-                    .col-1-of-2
-                    {
-                        width : calc((100% - 3 *  #{$project-main-skill-row-horz-gutter}) / 2);
-                        float : left;
-                        background-color: $color-match-jacket;
-                        margin-right: $project-main-skill-row-horz-gutter;
-                        padding :1rem;
-                        letter-spacing : 0.2rem;
-                        font-family : 'Jost' , 'sans-serif';
-                        font-weight : bold;
-                        text-align: center;
-                        border-radius : 0.5rem;
-                        box-shadow: 0 1rem 2rem rgba($color-match-jacket ,0.8);
-                       text-decoration: none;
-                        
-                        &:not(:last-child)
-                        {
-                            margin-left: $project-main-skill-row-horz-gutter;
-                        }
-                        
-                            
-                    }
-                   
-                    
-                }
-            }
-         
-            
-        }
-        .col-3-of-5
-        {
-          
-            border : 0.1rem solid black;
-            flex:3;
-            background-color: $color-match-jacket;
-            .project-title
-            {
-                text-align: center;
-                margin : $project-main-skill-row-vert-gutter 0;
-                font-family: 'Secular One', sans-serif;
-                    word-spacing: 0.2rem;
-                    font-size : 4rem;
-                    @include respond(phone)
-                    {
-                        font-size:3rem;
-                    }
-            }
-            .tech-used
-            {
-                .row-of-3
-                {
-                
-                    padding: 0 2rem;                   
-                    .col-1-of-3
-                    {
-                        &:not(:last-child) 
-                        {
-                            margin-right : $project-main-skill-row-horz-gutter;
-                        }
-                        width : calc((100% - 2 * #{$project-main-skill-row-horz-gutter}) / 3 );
-                        float :left;
-                        margin-bottom : $project-main-skill-row-vert-gutter;
-                        text-align: center;
-                        background-color: $color-tertiary;
-                        border-radius : 0.5rem;
-                        padding :1rem;
-                        letter-spacing : 0.2rem;
-                        font-family : 'Jost' , 'sans-serif';
-                        font-weight : bold;
-                    }
-                    
-                    .dummy
-                    {
-                        visibility: hidden;
-                    }
-                   
-                    
-                }
-                
-            }
-            .project-brief-description
-            {
-                clear:both;
-                content:"";
-                word-wrap :break-word;
-                font-family: 'Jost', sans-serif;
-                font-size:2.5rem;
-                padding:2rem;
-
-            }
-        
-        }
-        
-
-
+        @include smallDevices;
     }
+    @include respond(tab-land)
+    {
+        @include bigDevices;
+    }
+    @include respond(tab-port)
+    {
+        @include bigDevices;
+    }
+   
 }
 
+    
+    
