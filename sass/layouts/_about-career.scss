@@ -15,7 +15,7 @@
     padding-bottom : 30rem; //becayuse we have pust -20 rem top
     @include respond(phone)
     {
-      padding-bottom: 50rem;
+      padding-bottom: 55rem !important;
     }
     @include respond(tab-port)
     {

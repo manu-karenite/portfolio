@@ -33,6 +33,7 @@
             @include respond(phone)
             {
                 width : 100%;
+              
             }
 
             .organization-name
@@ -84,6 +85,12 @@
                 font-family: 'Jost', sans-serif;
                 text-justify: auto;
                 padding-top : 4rem;
+                @include respond(phone)
+                {
+                    margin-bottom: 0rem;
+                  
+                }
+    
                
             }
            

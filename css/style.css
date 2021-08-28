@@ -220,7 +220,7 @@ phone : upto 600px
   padding-bottom: 30rem; }
   @media screen and (max-width: 37.5em) {
     .about-career {
-      padding-bottom: 50rem; } }
+      padding-bottom: 55rem !important; } }
   @media screen and (max-width: 56.25em) {
     .about-career {
       padding-bottom: 45rem; } }
@@ -332,6 +332,9 @@ phone : upto 600px
         font-family: 'Jost', sans-serif;
         text-justify: auto;
         padding-top: 4rem; }
+        @media screen and (max-width: 37.5em) {
+          .my-work .my-work-experience .work-detail .col-3-of-4 .work-description {
+            margin-bottom: 0rem; } }
     .my-work .my-work-experience .work-detail .col-1-of-4 {
       float: left;
       width: calc(((100% - 4rem ) / 4 ) *  1);
