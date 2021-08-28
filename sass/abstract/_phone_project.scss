@@ -1,0 +1,119 @@
+
+
+@mixin smallDevices {
+
+    @include respond(phone)
+    {
+        .project-skeleton
+        {
+        
+        border:0.5rem $color-match-jacket solid; 
+        border-radius: 2rem;
+        width :100%;
+        margin-bottom :5rem;
+    
+        .col-2-of-5
+        {
+            width:100%;
+            .projects-image-and-link
+            {
+
+                .project-image
+                {
+                    .u-format-project-snapshot
+                    {
+                        width : 100%;
+                        padding:2rem;
+                    }
+                }
+                .projects-link
+                {
+                    
+                    
+                    .col-1-of-2
+                    {
+                        
+                        text-align: center;
+                        width : calc((100% - 4 * #{$projects-gutter-horizontal}) / 2);
+                        float:left;
+                        &:not(:last-child)
+                        {
+                            margin-right: $projects-gutter-horizontal;
+                            margin-left: $projects-gutter-horizontal;;
+                        }
+                        padding :1rem;
+                        margin-top : 2rem;
+                        margin-bottom: 2rem;
+                        letter-spacing : 0.2rem;
+                        font-family : 'Jost' , 'sans-serif';
+                        font-weight : bold;
+                        text-align: center;
+                        border-radius : 0.5rem;
+                        box-shadow: 0 1rem 2rem rgba($color-match-jacket ,0.8);
+                        background-color: $color-tertiary
+                    }
+                }
+            }
+        }
+        .col-3-of-5
+        {
+            width : 100%;
+            background-color: $color-match-jacket;
+            
+            .project-title
+            {
+                text-align: center;
+                font-family: 'Secular One', sans-serif;
+                word-spacing: 0.2rem;
+                font-size : 4rem;
+                margin-bottom: $project-main-skill-row-vert-gutter;
+                clear: both;
+                content: "";
+            }
+            .tech-used
+            {
+                .row-of-3
+                {
+                    padding: 0 2rem; 
+                    .col-1-of-3
+                    {
+                        &:not(:last-child) 
+                        {
+                            margin-right : $project-main-skill-row-horz-gutter;
+                        }
+                        width : calc((100% - 2 * #{$project-main-skill-row-horz-gutter}) / 3 );
+                        float :left;
+                        margin-bottom : $project-main-skill-row-vert-gutter;
+                        text-align: center;
+                        background-color: $color-tertiary;
+                        border-radius : 0.5rem;
+                        padding :1rem;
+                        letter-spacing : 0.2rem;
+                        font-family : 'Jost' , 'sans-serif';
+                        font-weight : bold;
+                    }
+                    .dummy
+                    {
+                        visibility: hidden;
+                    }
+                }
+            }
+
+            
+
+        }
+        .project-brief-description
+            {
+                clear:both;
+                content:"";
+                word-wrap :break-word;
+                font-family: 'Jost', sans-serif;
+                font-size:2.5rem;
+                padding:2rem;
+
+            }
+
+
+        }
+    }
+}
