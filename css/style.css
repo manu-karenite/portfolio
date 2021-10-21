@@ -790,6 +790,11 @@ tab-land : 1200 px
 tab-port : upto 900px
 phone : upto 600px
 */
+@media only screen and (max-width: 37.5em) {
+  .about-me {
+    padding-left: 2.1rem;
+    padding-right: 2.1rem; } }
+
 .about-me__inner {
   flex-direction: row;
   justify-content: flex-start;
@@ -797,6 +802,9 @@ phone : upto 600px
   align-items: flex-start;
   margin-top: 8rem;
   margin-bottom: 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .about-me__inner {
+      flex-direction: column; } }
   .about-me__inner--left {
     flex: 0 1 50%;
     flex-wrap: wrap;
