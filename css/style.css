@@ -266,38 +266,6 @@ body {
       position: absolute;
       transform: translateX(-50%); } }
 
-@media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
-  .row-about-me {
-    font-size: 2rem !important; } }
-
-.row-about-me .col-1-of-4 {
-  width: calc((100% - 3 * 1.5rem) / 4);
-  float: left;
-  margin-bottom: 2rem;
-  font-size: 1rem; }
-  .row-about-me .col-1-of-4:not(:last-child) {
-    margin-right: 1.5rem; }
-
-.row-about-me .col-1-of-3 {
-  width: calc((100% - 2 * 1.5rem) / 3);
-  float: left; }
-  .row-about-me .col-1-of-3:not(:last-child) {
-    margin-right: 1.5rem; }
-
-@media only screen and (max-width: 37.5em) {
-  .row-about-me {
-    min-width: 75vw;
-    float: none;
-    margin: 0 auto; } }
-
-@media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
-  .content-about-me {
-    font-size: 2.5rem; } }
-
-@media only screen and (max-width: 37.5em) {
-  .content-about-me {
-    width: 100%; } }
-
 /*
 big-device : above 1800px
 tab-land : 1200 px
