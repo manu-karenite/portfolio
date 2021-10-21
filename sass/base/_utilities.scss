@@ -6,43 +6,37 @@
   letter-spacing: $letter-space;
   text-align: center;
   padding: 1.3rem 1rem;
-  @include respond(phone)
-  {
+  @include respond(phone) {
     letter-spacing: 0;
-    font-size:4rem;
+    font-size: 4rem;
   }
-  @include respond(tab-port)
-  {
+  @include respond(tab-port) {
     letter-spacing: 0;
-    font-size:4.75rem;
+    font-size: 4.75rem;
   }
 }
 
-.u-format-skills
-{
+.u-format-skills {
   background-color: $color-match-jacket;
   text-align: center;
-  border-radius : 0.5rem;
+  border-radius: 0.5rem;
   padding: $padding-skills;
   letter-spacing: $letter-space-medium;
-  font-family: 'Jost', sans-serif;
-  font-weight : bold;
-  color:$color-match-table;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: $color-match-table;
+  margin: 0.75rem 1rem;
 }
 
-
-.u-center-img-wrt-parent
-{
-  margin : 0 auto;
-  @include respond(phone)
-  {
+.u-center-img-wrt-parent {
+  margin: 0 auto;
+  @include respond(phone) {
     position: relative;
-    display:none;
+    display: none;
   }
 }
 
-.u-no-decoration
-{
+.u-no-decoration {
   text-decoration: none;
-  color:$color-white;
+  color: $color-white;
 }

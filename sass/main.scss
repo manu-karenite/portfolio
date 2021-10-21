@@ -1,8 +1,6 @@
-
 @import "base/base";
 
 @import "abstract/variables";
-
 
 @import "base/utilities";
 
@@ -16,11 +14,10 @@
 @import "layouts/my-work";
 @import "base/animation";
 
-
 @import "layouts/projects";
-
 
 @import "layouts/footer";
 @import "abstract/mixins";
 @import "abstract/phone_project";
 @import "abstract/other_project.scss";
+@import "components/skills-revamp";
