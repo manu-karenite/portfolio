@@ -1,4 +1,8 @@
 .about-me {
+  @include respond(phone) {
+    padding-left: 2.1rem;
+    padding-right: 2.1rem;
+  }
   &__inner {
     flex-direction: row;
     justify-content: flex-start;
@@ -6,12 +10,14 @@
     align-items: flex-start;
     margin-top: 8rem;
     margin-bottom: 8rem;
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
     &--left {
       flex: 0 1 50%;
       flex-wrap: wrap;
       text-justify: distribute-all-lines;
-
       //details here
       //this whole is a flexible tag
       .skills-about-me {
@@ -33,6 +39,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       .img1 {
         flex-basis: 100%;
       }
