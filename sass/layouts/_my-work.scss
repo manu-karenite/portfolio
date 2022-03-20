@@ -1,142 +1,115 @@
-.my-work
-{
-   padding-bottom: 12rem;
-    position: relative;
-    .my-work-experience
-{
-    .my-work-header
-    {
-        font-weight: bolder;
-        font-family: 'Secular One', sans-serif;
-        letter-spacing: 0.5rem;
-        left : 50%;
-        text-align: center;
-        padding : 2.5rem 2.5rem 1.75rem 2.5rem;
-        font-size: 7rem;
-        @include respond(phone)
-        {
-          font-size:5rem;
-        }
-        color:$color-tertiary;
+.my-work {
+  padding-bottom: 12rem;
+  position: relative;
+  .my-work-experience {
+    .my-work-header {
+      font-weight: bolder;
+      font-family: "Secular One", sans-serif;
+      letter-spacing: 0.5rem;
+      left: 50%;
+      text-align: center;
+      padding: 2.5rem 2.5rem 1.75rem 2.5rem;
+      font-size: 7rem;
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+      color: $color-tertiary;
     }
-    .work-detail
-    {
-        
-        padding: 0 15rem 3rem 15rem;
-        @include respond(tab-port)
-          {
-            padding : 0 1rem 3rem 1rem;
-          }
-          @include respond(phone)
-          {
-            padding : 0 1rem 3rem 1rem;
-          }
-          margin : 5rem;
+    .work-detail {
+      padding: 0 15rem 3rem 15rem;
+      @include respond(tab-port) {
+        padding: 0 1rem 3rem 1rem;
+      }
+      @include respond(phone) {
+        padding: 0 1rem 3rem 1rem;
+      }
+      margin: 5rem;
 
-        .col-3-of-4
-        {
-            float : left;
+      .col-3-of-4 {
+        float: left;
+        margin-right: $work-gutter;
+        width: calc(((100% - #{$work-gutter}) / 4) * 3);
+        margin-bottom: 20px;
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        .organization-name {
+          color: $color-tertiary;
+          font-weight: bolder;
+          line-height: 5rem;
+          height: 5rem;
+          font-family: "Jost", sans-serif;
+          font-weight: bold;
+          letter-spacing: $letter-space-medium;
+          font-size: 3.5rem;
+        }
+        .position-and-activeyear {
+          .position {
             margin-right: $work-gutter;
-            width : calc(((100% - #{$work-gutter} ) / 4 ) * 3 );
-            @include respond(phone)
-            {
-                width : 100%;
-              
-            }
-
-            .organization-name
-            {
-                color:$color-tertiary;
-                font-weight : bolder;
-                line-height:5rem;
-                height:5rem;
-                font-family: 'Jost', sans-serif;
-                font-weight : bold;
-                letter-spacing: $letter-space-medium;
-                font-size: 3.5rem;
-            }
-            .position-and-activeyear
-            {
-                .position
-                {
-                    margin-right : $work-gutter;
-                    width : calc(((100% - #{$work-gutter}) /3 ) * 2);
-                    float :left;
-                    font-family: 'Secular One', sans-serif;
-                    word-spacing: 0.2rem;
-                    font-size : 3rem;
-                    color : $color-tertiary;
-                    padding-left :6rem;
-
-                }
-                .activeyear
-                {
-                    width : calc(((100% - #{$work-gutter}) /3 ) * 1);
-                    float:left;
-                    font-family: 'Secular One', sans-serif;
-                    word-spacing: 0.2rem;
-                    font-size : 3rem;
-                    color : $color-tertiary;
-                    padding-left :6rem;
-                    
-                }
-
-            
-            }
-            .work-description
-            {
-                clear : both;
-                content: "";
-                margin-top : 2rem;
-                padding-left : 4rem ; padding-right : 4rem;
-                word-wrap :normal;
-                font-family: 'Jost', sans-serif;
-                text-justify: auto;
-                padding-top : 4rem;
-         
-    
-               
-            }
-           
-            
+            width: calc(((100% - #{$work-gutter}) / 3) * 2);
+            float: left;
+            font-family: "Secular One", sans-serif;
+            word-spacing: 0.2rem;
+            font-size: 3rem;
+            color: $color-tertiary;
+            padding-left: 6rem;
+          }
+          .activeyear {
+            width: calc(((100% - #{$work-gutter}) / 3) * 1);
+            float: left;
+            font-family: "Secular One", sans-serif;
+            word-spacing: 0.2rem;
+            font-size: 3rem;
+            color: $color-tertiary;
+            padding-left: 6rem;
+          }
         }
-        .col-1-of-4
-        {
-            float :left;
-            width : calc(((100% - #{$work-gutter} ) / 4 ) *  1 ) ;
-            height : 18rem;
-            width : 18rem;
-
-           .type-of-role
-           {
-               text-align: center;
-               width : 18rem;
-               font-family: 'Secular One', sans-serif;
-                word-spacing: 0.2rem;
-                font-size : 3rem;
-                color : $color-tertiary;
-                letter-spacing : 0.2rem;
-                padding : 1rem 0;
-               
-           }
-           @include respond(phone)
-           {
-               display: none;
-           }
+        .work-description {
+          clear: both;
+          content: "";
+          margin-top: 2rem;
+          padding-left: 4rem;
+          padding-right: 4rem;
+          word-wrap: normal;
+          font-family: "Jost", sans-serif;
+          text-justify: auto;
+          padding-top: 4rem;
         }
-        clear : both;
-                content: "";
-       
+      }
+      .col-1-of-4 {
+        float: left;
+        width: calc(((100% - #{$work-gutter}) / 4) * 1);
+        height: 18rem;
+        width: 18rem;
+        margin-bottom: 20px;
+
+        .type-of-role {
+          text-align: center;
+          width: 18rem;
+          font-family: "Secular One", sans-serif;
+          word-spacing: 0.2rem;
+          font-size: 3rem;
+          color: $color-tertiary;
+          letter-spacing: 0.2rem;
+          padding: 1rem 0;
+        }
+        @include respond(phone) {
+          display: none;
+        }
+      }
+      clear: both;
+      content: "";
     }
-}
+  }
 }
 
-#organization-logo , .organization-img
-{
-    height : 18rem;
-    width : 18rem;
-    border-radius : 2rem;
+#organization-logo,
+.organization-img {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 2rem;
 }
-.organization-img{
-    background-color: $color-white;
+.organization-img {
+  background-color: $color-white;
 }
