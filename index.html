@@ -1,606 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="shortcut icon" type="image/jpeg" href="img/logo-medium.jpg">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Pacifico&family=Candal&family=Secular+One&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-         rel="stylesheet">
-         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <title>Manavesh Narendra | Portfolio</title>
-   </head>
-   <body>
-      <header class="page-head">
-         <div class="logo-box">
-            <img src="img/logo-medium.jpg" alt="Logo-Image" class="img-logo-class">
-         </div>
-         <div class="middleBox">
-           
-            <div class="middleBox__imageAndName">
-              
-               <div class="image-outer">
-                  <div class="middleBox__imageAndName--image">
-                     <img src="img/my-img.png" alt="potfolio-image" class="portfolio-img">
-                  </div>
-               </div>
-              
-               <div class="middleBox__imageAndName--name">
-                  
-                  <div class="firstName u-name-formatting">
-                     MANAVESH
-                  </div>
-                  <div class="lastName u-name-formatting">
-                     NARENDRA
-                  </div>
-               </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Manavesh Narendra — Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --bg2: #0f0f18;
+      --bg3: #13131f;
+      --surface: #1a1a2e;
+      --border: #252540;
+      --accent: #00ff88;
+      --accent2: #00c8ff;
+      --accent3: #ff6b35;
+      --text: #e8e8f0;
+      --muted: #7b7b9a;
+      --dim: #3a3a5c;
+      --glow: 0 0 24px rgba(0,255,136,0.35);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      overflow-x: hidden;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
 
-            </div>
-            <div class="middleBox__links">
-               <!--Element-->
-               <div class="middleBox__links--link1 col-1-of-4">
-                  <!--Modifier-->
-                  <a href="mailto:%20manavesh.narendra@gmail.com" target="_blank"><img src="img/svg/mail.svg" id="img-logo"></a>
-               </div>
-               <div class="middleBox__links--link2 col-1-of-4">
-                  <!--Modifier-->
-                  <a href="https://www.linkedin.com/in/manavesh-narendra-489833196/" target="_blank"><img src="img/svg/linked.svg" id="img-logo"></a>
-               </div>
-               <div class="middleBox__links--link3 col-1-of-4">
-                  <!--Modifier-->
-                  <a href="https://github.com/manu-karenite" target="_blank"><img src="img/svg/git.svg" id="img-logo"></a>
-               </div>
-               <div class="middleBox__links--link4 col-1-of-4">
-                  <!--Modifier-->
-                  <a href="https://drive.google.com/file/d/1eWB-UGxl7AmSsDfOhErVcPEbw3ukj-14/view?usp=sharing" target="_blank"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-resume-recruitment-agency-flaticons-lineal-color-flat-icons-4.png" id="img-logo"/></a>
-               </div>
-            </div>
-         </div>
-      </header>
-      <!--Main Part Here-->
-      <main class="potfolio-main">
-         <section class="about-me">
-            <div data-aos="fade-up" data-aos-duration="2000">
-            <div class="about-me__inner">
-               <div class="about-me__inner--left ">
-               
-                  <div class="content-about-me">
-                     From 2019 to 2023, my B.Tech in Computer Science was a dynamic journey encompassing advanced topics in computer science, including <strong>Advanced Algorithms, Data Structures, Machine Learning, and Software Architecture</strong>. This educational experience stoked my passion for <strong>full-stack development and web development</strong>. I am now excited to apply the knowledge and skills I gained to craft innovative, user-centric applications and solutions. <br>Some of my skills are listed below &darr;
-                  </div>
-              
-                  <div class="skills-about-me">
-                     <div class="skill u-format-skills">Python</div>
-                     <div class="skill u-format-skills">Java</div>
-                     <div class="skill u-format-skills">C++</div>
-                     <div class="skill u-format-skills">JavaScript</div>
-                     <div class="skill u-format-skills">Node.js</div>
-                     <div class="skill u-format-skills">React.js</div>
-                     <div class="skill u-format-skills">express.js</div>
-                     <div class="skill u-format-skills">Mongo DB</div>
-                     <div class="skill u-format-skills">MySQL</div>
-                     <div class="skill u-format-skills">Docker</div>
-                     <div class="skill u-format-skills">Kubernetes</div>
-                     <div class="skill u-format-skills">Ansible</div>
-                     <div class="skill u-format-skills">Shell Script</div>
-                     <div class="skill u-format-skills">Elastic Search</div>
-                     <div class="skill u-format-skills">Neo4j</div>
-                     <div class="skill u-format-skills">REST APIs</div>
-                     <div class="skill u-format-skills">Jenkins (CI/CD)</div>
-                  </div>
-               </div>
-               <div class="about-me__inner--right">
-                  <div class="u-center-img-wrt-parent img1">
-                     <img src="img/svg/programming.svg" id="boy-programming" alt="Programming-and-Boy">
-                  </div>
-               </div>
-               
-            </div>
-         </div>
-         </section>
-         </section>
-         <section class="about-career">
-            <!--this will consist of 2 sections -> my education and career-->
-            <section class="my-education">
-               <!--block here-->
-               <div data-aos="fade-up" data-aos-duration="2000">
-               <center><div class="my-education-header">EDUCATION</div></center></div>
-               <div data-aos="fade-up" data-aos-duration="2000">
-               <section class="education-detail">
-                  <!--<i class="material-icons" style="font-size: 5rem;">
-                     outlined_flag
-                     </i>-->
-                  <div class="name-of-degree">>> Bachelor of Technology</div>
-                  <!--element here-->
-                  <div class="institute-name-and-passing">
-                     <div class="institute">Cochin University of Science and Technology</div>
-                     <div class="passing">2019-2023</div>
-                  </div>
-                  <br>
-                  <div class="course-description">
-                     Over the four-year span of my B.Tech in Computer Science, from 2019 to 2023, I engaged deeply with technical subjects such as <strong>Advanced Algorithms</strong>,  <strong>Data Structures</strong>, <strong>Machine Learning</strong>, <strong>DBMS, OOPS, Computer Networks, Microprocessors</strong> and <strong>Software Architecture</strong>. This educational odyssey not only refined my core competencies but also instilled in me a profound grasp of the intricate dynamics of technology, enabling me to address complex technical challenges with precision and creativity. Completed the Course with <strong>9.59 CGPA</strong>
-                  </div>
-               </section></div>
-               <div data-aos="fade-up" data-aos-duration="2000">
-               <section class="education-detail">
-              
-                  <div class="name-of-degree">>> 12th Examination</div>
-                  <!--element here-->
-                  <div class="institute-name-and-passing">
-                     <div class="institute">St. Karen's High School </div>
-                     <div class="passing">2017-2019</div>
-                  </div>
-                  <div class="course-description"><br>
-                     My Secondary School has provided me with the apt knowledge of how the IT Sector works, with programming fundamentals in JAVA. My interests in this sector has been a lot influenced from my <i>alma mater</i>.
-                  </div>
-               </section></div>
-            </section>
-            <!-------------------------------------------------------------------------------------------------------->
-            <div data-aos="fade-up" data-aos-duration="2000">
-               <div class="my-work">
-                  
-               <div class="my-work-experience">
-                  <div class="my-work-header">WORK EXPERIENCE</div>
-                  <div class="work-detail">
-                     <div class="col-3-of-4">
-                        <div class="organization-name">>> IBM India Software Labs, Kochi</div>
-                        <div class="position-and-activeyear">
-                           <div class="position">Software Development Engineer</div>
-                           <div class="activeyear">Jul 2023 - Present</div>
-                        </div>
-                        <div class="work-description">Worked for <strong>IBM Match360 with Watson</strong> Product, in
-                           the Backend Team. Part of Micro-Services team managing the flow of User
-                           Data between different IBM Products. <strong>Enhancing and Building Features</strong> as a part of Strategy or Client Demands. Handling the <strong>DevOps Operations</strong> to enable timely development and testing for the new features. <strong>Automated all the Tests scheduled after each release, saving 50+ hours</strong> of development and testing every month. <strong>Key Skills Include Java, Gradle, Docker, Redhat Openshift</strong> etc.</div>
-                     </div>
-                     <div class="col-1-of-4">
-                        <div class="organization-img">
-                           <img src = "https://res.cloudinary.com/pet-life/image/upload/v1697924159/pesnlwmnisvfahh8pfqx.png" alt="IBM Logo" id="organization-logo">
-                        </div>
-                        <div class="type-of-role">Regular</div>
-                     </div>
-                  </div>
-                  <br/>
-                  <br/>
-                  <div class="work-detail">
-                     <div class="col-3-of-4">
-                        <div class="organization-name">>> IBM India Software Labs, Kochi</div>
-                        <div class="position-and-activeyear">
-                           <div class="position">Software Developer Intern</div>
-                           <div class="activeyear">Jan 2023 - June 2023</div>
-                        </div>
-                        <div class="work-description">Worked for <strong>IBM Match360 with Watson</strong> Product, in
-                           the Backend Team. Part of Micro-Services team managing the flow of User
-                           Data between different IBM Products. Worked as <strong>Java Developer</strong> writing code changes, for new features, and maintenance of existing ones. Also <strong>handled DevOps Environment</strong> for Testing Purposes.</div>
-                     </div>
-                     <div class="col-1-of-4">
-                        <div class="organization-img">
-                           <img src = "https://res.cloudinary.com/pet-life/image/upload/v1697924159/pesnlwmnisvfahh8pfqx.png" alt="IBM Logo" id="organization-logo">
-                        </div>
-                        <div class="type-of-role">Internship</div>
-                     </div>
-                  </div>
-                  <br/>
-                  <br/>
-                  <div class="work-detail">
-                     <div class="col-3-of-4">
-                        <div class="organization-name">>> Cafecart</div>
-                        <div class="position-and-activeyear">
-                           <div class="position">Full Stack MERN Web Developer</div>
-                           <div class="activeyear">Jan 2022- Mar 2022</div>
-                        </div>
-                        <div class="work-description">I worked with Cafecart as a Full Stack<strong> MERN Web Developer</strong> in B.Tech 3rd Year. Project involved maintaining <strong>Payment System Integration</strong>, <strong>Coupon System</strong>, <strong>Integration with Logistic Partner</strong>. Scaled the Platform by <strong>Migrating to React.js</strong> from Scratch with brand New UI/UX.</div>
-                     </div>
-                     <div class="col-1-of-4">
-                        <div class="organization-img">
-                           <img src = "https://res.cloudinary.com/techbuy/image/upload/v1644658063/helllo_po0gga.jpg" alt="Coding Ninjas Logo" id="organization-logo">
-                        </div>
-                        <div class="type-of-role">Internship</div>
-                     </div>
-                  </div>
-               </div>
-            </div></div>
-         </section>
-        
-         <div data-aos="fade-up" data-aos-duration="2000">
-         <section class="my-projects">
-           <div class="project-header">PROJECTS</div>
-           <div class="project-skeleton">
-        
-            <div class="col-2-of-5">
-              <div class="projects-image-and-link">
-              <div class="project-image">
-              <img src="img/projects-snapshots/project-10.png" class="u-format-project-snapshot">
-              </div>
-              <div class="projects-link">
-              <div class="projects-link--link1 col-1-of-2"><a href="https://petlife-web.herokuapp.com/" target="_blank" class="u-no-decoration">Live Here</a></div>
-              <div class="projects-link--link1 col-1-of-2">
-              <a href="https://github.com/manu-karenite/Pet-Life" target="_blank" class="u-no-decoration">Source Code</a>
-              <link>
-              </div>
-              </div>
-              </div>
-              </div>
-             <div class="col-3-of-5">
-                <div class="project-title">Pet Life</div>
-                <div class="tech-used">
-                   <div class="row-of-3">
-                     <div class="tech col-1-of-3 ">MongoDB</div>
-                      <div class="tech col-1-of-3">Express.js</div>
-                      <div class="tech col-1-of-3">React.js</div>
-                      
-                   </div>
-                   <div class="row-of-3">
-                      <div class="tech col-1-of-3 ">Node.js</div>
-                      <div class="tech col-1-of-3 ">JWT</div>
-                      <div class="tech col-1-of-3">Redux</div>
-                   </div>
-                </div>
-                <div class="project-brief-description">
-                  A <b>Pet Hotel Service Based Project</b> on MERN Stack. Contains <b>Users, Hotels and Admin Panel</b>, built on React.js and Node.js. Authentication through <b>JSON WebToken</b> in Backend. Also used <b>React Redux</b> in Frontend to maintain Global State and LoggedIn User status. <b>Transactional Emails</b> through <b>Sendgrid</b>, and Image Hosting at <b>Cloudinary</b>.
-                  </div>
+    /* GRID BG */
+    .grid-bg {
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,255,136,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,136,0.025) 1px, transparent 1px);
+      background-size: 44px 44px;
+      pointer-events: none; z-index: 0;
+    }
 
-             </div>
-            
+    /* ═══ NAV ═══ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.5rem; height: 56px;
+      background: rgba(10,10,15,0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800; font-size: 1rem;
+      color: var(--accent); text-decoration: none;
+      z-index: 210; position: relative;
+    }
+    .nav-logo span { color: var(--muted); }
+    .nav-links { display: flex; gap: 1.6rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted); text-decoration: none;
+      font-size: 0.72rem; letter-spacing: 0.12em;
+      text-transform: uppercase; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta {
+      background: transparent; border: 1px solid var(--accent);
+      color: var(--accent); padding: 0.35rem 0.9rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem; cursor: pointer;
+      text-decoration: none; letter-spacing: 0.08em;
+      transition: all 0.2s; white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--accent); color: var(--bg); box-shadow: var(--glow); }
+
+    /* Hamburger button */
+    .hamburger {
+      display: none;
+      flex-direction: column; justify-content: center; align-items: center;
+      gap: 5px; background: none; border: none;
+      cursor: pointer; padding: 8px; z-index: 210; position: relative;
+      width: 40px; height: 40px;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--text); border-radius: 2px;
+      transition: all 0.3s ease; transform-origin: center;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile full-screen menu */
+    .mobile-menu {
+      position: fixed; inset: 0; z-index: 190;
+      background: rgba(10,10,15,0.98);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 2rem;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .mobile-menu.open { opacity: 1; pointer-events: all; }
+    .mobile-menu a {
+      color: var(--text); text-decoration: none;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.9rem; font-weight: 700;
+      letter-spacing: 0.02em; transition: color 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .mobile-menu a:active { color: var(--accent); }
+    .mobile-menu .m-cta {
+      margin-top: 0.5rem;
+      background: var(--accent); color: var(--bg);
+      padding: 0.8rem 2.2rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem; font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    /* ═══ MAIN ═══ */
+    main { position: relative; z-index: 1; }
+
+    /* ═══ HERO ═══ */
+    .hero {
+      min-height: 100svh;
+      display: flex; align-items: center;
+      padding: 72px 1.5rem 3rem;
+      max-width: 1200px; margin: 0 auto;
+      gap: 3rem;
+    }
+    .hero-left { flex: 1; min-width: 0; }
+    .hero-right { flex: 0 0 380px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(0,255,136,0.08);
+      border: 1px solid rgba(0,255,136,0.22);
+      color: var(--accent); padding: 0.28rem 0.8rem;
+      font-size: 0.7rem; letter-spacing: 0.1em;
+      margin-bottom: 1.25rem;
+    }
+    .hero-badge::before {
+      content: ''; width: 6px; height: 6px;
+      background: var(--accent); border-radius: 50%;
+      animation: blink 1.5s infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.15} }
+
+    .hero-name {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.4rem, 8vw, 5rem);
+      font-weight: 800; line-height: 1;
+      letter-spacing: -0.02em; margin-bottom: 0.5rem;
+    }
+    .hero-name .first { color: var(--text); }
+    .hero-name .last {
+      display: block; color: transparent;
+      -webkit-text-stroke: 1.5px var(--accent);
+    }
+    .hero-title {
+      font-size: 0.78rem; color: var(--muted);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    .hero-title strong { color: var(--accent2); }
+    .hero-desc {
+      font-size: 0.82rem; color: var(--muted);
+      max-width: 480px; line-height: 1.85; margin-bottom: 2rem;
+    }
+    .hero-stats {
+      display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem;
+    }
+    .stat { display: flex; flex-direction: column; }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem; font-weight: 800;
+      color: var(--accent); line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.62rem; color: var(--muted);
+      letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.25rem;
+    }
+    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent); color: var(--bg);
+      border: none; padding: 0.7rem 1.4rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem; font-weight: 700;
+      cursor: pointer; text-decoration: none;
+      letter-spacing: 0.08em; transition: all 0.2s;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+    .btn-primary:active { transform: scale(0.97); }
+    .btn-outline {
+      background: transparent; color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.7rem 1.4rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem; cursor: pointer;
+      text-decoration: none; letter-spacing: 0.08em;
+      transition: all 0.2s;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-outline:active { border-color: var(--accent2); color: var(--accent2); }
+
+    /* TERMINAL */
+    .terminal {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 6px; overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 40px rgba(0,255,136,0.06);
+    }
+    .terminal-bar {
+      background: var(--surface); padding: 0.6rem 1rem;
+      display: flex; align-items: center; gap: 0.45rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-r { background: #ff5f56; } .dot-y { background: #ffbd2e; } .dot-g { background: #27c93f; }
+    .terminal-title { font-size: 0.68rem; color: var(--muted); margin: 0 auto; }
+    .terminal-body { padding: 1rem 1.25rem; font-size: 0.76rem; line-height: 2; overflow-x: auto; }
+    .t-line { display: flex; gap: 0.5rem; }
+    .t-prompt { color: var(--accent); user-select: none; flex-shrink: 0; }
+    .t-cmd { color: var(--text); }
+    .t-out { color: var(--muted); padding-left: 0.8rem; }
+    .t-out.hi { color: var(--accent2); }
+    .t-out.acc { color: var(--accent); }
+    .t-out.warn { color: var(--accent3); }
+    .t-cursor {
+      display: inline-block; width: 7px; height: 0.9em;
+      background: var(--accent); animation: cblink 1s step-end infinite;
+      vertical-align: text-bottom;
+    }
+    @keyframes cblink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+    /* ═══ SECTIONS ═══ */
+    section {
+      max-width: 1200px; margin: 0 auto;
+      padding: 5rem 1.5rem; position: relative; z-index: 1;
+    }
+    .section-label {
+      font-size: 0.68rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.6rem, 5vw, 2.8rem);
+      font-weight: 800; line-height: 1.1; margin-bottom: 2.5rem;
+    }
+    .section-title span { color: transparent; -webkit-text-stroke: 1px var(--dim); }
+    hr.divider { border: none; border-top: 1px solid var(--border); margin: 0 1.5rem; position: relative; z-index: 1; }
+
+    /* ═══ EXPERIENCE TABS ═══ */
+    .exp-tabs {
+      display: flex; overflow-x: auto; scrollbar-width: none;
+      border-bottom: 1px solid var(--border); margin-bottom: 2rem;
+    }
+    .exp-tabs::-webkit-scrollbar { display: none; }
+    .exp-tab {
+      flex-shrink: 0; padding: 0.8rem 1.4rem;
+      background: none; border: none; border-bottom: 2px solid transparent;
+      color: var(--muted); font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem; cursor: pointer; letter-spacing: 0.05em;
+      transition: all 0.2s; -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+    .exp-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .exp-panel { display: none; }
+    .exp-panel.active { display: block; animation: fadein 0.3s ease; }
+    @keyframes fadein { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .exp-role {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.1rem, 4vw, 1.5rem);
+      font-weight: 700; color: var(--text); margin-bottom: 0.3rem;
+    }
+    .exp-org { font-size: 0.78rem; color: var(--accent2); margin-bottom: 1.2rem; }
+    .exp-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.4rem; }
+    .tag {
+      background: rgba(0,200,255,0.07);
+      border: 1px solid rgba(0,200,255,0.2);
+      color: var(--accent2); padding: 0.18rem 0.55rem; font-size: 0.65rem;
+    }
+    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .exp-bullets li {
+      font-size: 0.8rem; color: var(--muted);
+      padding-left: 1.2rem; position: relative; line-height: 1.75;
+    }
+    .exp-bullets li::before { content: '▸'; color: var(--accent); position: absolute; left: 0; font-size: 0.65rem; top: 0.2rem; }
+    .exp-bullets li strong { color: var(--text); font-weight: 500; }
+
+    /* ═══ SKILLS ═══ */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1px; background: var(--border);
+    }
+    .skill-card {
+      background: var(--bg); padding: 1.75rem;
+      position: relative; overflow: hidden; transition: background 0.2s;
+    }
+    .skill-card::before {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 3px; height: 0; background: var(--accent); transition: height 0.3s ease;
+    }
+    .skill-card:hover { background: var(--bg3); }
+    .skill-card:hover::before { height: 100%; }
+    .skill-card-icon { font-size: 1.6rem; margin-bottom: 0.75rem; }
+    .skill-card-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.9rem; color: var(--text); }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .pill { background: var(--surface); color: var(--muted); padding: 0.18rem 0.55rem; font-size: 0.67rem; border: 1px solid var(--border); }
+
+    /* ═══ AWARDS ═══ */
+    .awards-list { display: flex; flex-direction: column; gap: 1px; background: var(--border); }
+    .award-item {
+      background: var(--bg); padding: 1.4rem 1.5rem;
+      display: flex; align-items: flex-start; gap: 1.25rem; transition: background 0.2s;
+    }
+    .award-item:hover { background: var(--bg3); }
+    .award-year { font-size: 0.7rem; color: var(--accent3); letter-spacing: 0.1em; flex: 0 0 44px; font-weight: 700; padding-top: 2px; }
+    .award-icon { font-size: 1.3rem; flex: 0 0 30px; }
+    .award-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.92rem; color: var(--text); margin-bottom: 0.3rem; }
+    .award-desc { font-size: 0.76rem; color: var(--muted); line-height: 1.65; }
+
+    /* ═══ PROJECTS ═══ */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1px; background: var(--border);
+    }
+    .project-card {
+      background: var(--bg); padding: 1.75rem;
+      position: relative; overflow: hidden; transition: background 0.2s;
+    }
+    .project-card:hover { background: var(--bg3); }
+    .project-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .project-card:hover::after { opacity: 1; }
+    .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.9rem; }
+    .project-icon { font-size: 1.4rem; }
+    .project-link {
+      color: var(--muted); font-size: 0.72rem; text-decoration: none;
+      border: 1px solid var(--border); padding: 0.18rem 0.5rem; transition: all 0.2s;
+    }
+    .project-link:hover, .project-link:active { color: var(--accent); border-color: var(--accent); }
+    .project-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--text); margin-bottom: 0.55rem; }
+    .project-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.75; margin-bottom: 1.1rem; }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .project-tech span {
+      font-size: 0.65rem; color: var(--accent3);
+      background: rgba(255,107,53,0.07); border: 1px solid rgba(255,107,53,0.2); padding: 0.12rem 0.45rem;
+    }
+
+    /* ═══ EDUCATION ═══ */
+    .edu-card {
+      background: var(--bg3); border: 1px solid var(--border);
+      padding: 2rem 1.75rem; display: flex; gap: 1.75rem; align-items: flex-start; max-width: 680px;
+    }
+    .edu-yr { font-family: 'Syne', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--dim); line-height: 1; }
+    .edu-yr-end { font-size: 0.7rem; color: var(--accent); margin-top: 2px; }
+    .edu-degree { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
+    .edu-uni { font-size: 0.77rem; color: var(--accent2); margin-bottom: 1rem; }
+    .edu-certs { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .cert {
+      background: rgba(0,255,136,0.05); border: 1px solid rgba(0,255,136,0.15);
+      color: var(--accent); padding: 0.22rem 0.65rem; font-size: 0.65rem;
+    }
+
+    /* ═══ CONTACT ═══ */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .contact-links { display: flex; flex-direction: column; gap: 1px; background: var(--border); }
+    .contact-link {
+      background: var(--bg); padding: 1.1rem 1.25rem;
+      display: flex; align-items: center; gap: 1rem;
+      text-decoration: none; transition: background 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .contact-link:hover, .contact-link:active { background: var(--bg3); }
+    .contact-icon { font-size: 1.1rem; flex: 0 0 28px; }
+    .contact-type { font-size: 0.62rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.12em; }
+    .contact-val { font-size: 0.82rem; color: var(--text); margin-top: 0.1rem; word-break: break-all; }
+    .contact-link:hover .contact-val, .contact-link:active .contact-val { color: var(--accent); }
+
+    footer {
+      text-align: center; padding: 1.75rem 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.68rem; color: var(--dim); position: relative; z-index: 1;
+    }
+    footer span { color: var(--accent); }
+
+    /* FADE IN */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ════════════════════════
+        MOBILE
+    ════════════════════════ */
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      .hero { flex-direction: column; padding: 68px 1.25rem 3rem; gap: 2rem; min-height: auto; padding-bottom: 4rem; }
+      .hero-right { width: 100%; flex: none; }
+      .hero-stats { gap: 1.1rem; }
+      .stat-num { font-size: 1.5rem; }
+      .terminal-body { font-size: 0.68rem; line-height: 1.85; padding: 0.9rem 1rem; }
+
+      section { padding: 3.5rem 1.25rem; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-terminal { display: none; }
+      .edu-card { flex-direction: column; gap: 0.75rem; }
+      .edu-yr { font-size: 1.6rem; }
+      hr.divider { margin: 0 1.25rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-name { font-size: clamp(2rem, 10vw, 2.6rem); }
+      .skills-grid { grid-template-columns: 1fr; }
+      .btn-primary, .btn-outline { padding: 0.65rem 1rem; font-size: 0.74rem; }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .hero { padding: 80px 2rem 3rem; }
+      .hero-right { flex: 0 0 320px; }
+      section { padding: 4rem 2rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-terminal { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#awards" onclick="closeMobile()">Awards</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="mailto:manavesh.narendra@gmail.com" class="m-cta">▶ Hire Me</a>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">MN<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:manavesh.narendra@gmail.com" class="nav-cta">$ hire --me</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-left fade-in">
+        <div class="hero-badge">Available for Opportunities</div>
+        <h1 class="hero-name">
+          <span class="first">Manavesh</span>
+          <span class="last">Narendra</span>
+        </h1>
+        <p class="hero-title">SDE II &nbsp;·&nbsp; <strong>IBM Software Lab</strong></p>
+        <p class="hero-desc">
+          Backend engineer specialising in distributed systems, microservices, and enterprise data platforms.
+          Building the invisible infrastructure that scales — from MDM pipelines and Spark bulk indexers
+          to HL7 healthcare brokers and LLM-powered automation.
+        </p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Yrs IBM</span></div>
+          <div class="stat"><span class="stat-num">3×</span><span class="stat-label">Awards</span></div>
+          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">LeetCode</span></div>
+          <div class="stat"><span class="stat-num">60%</span><span class="stat-label">Cost Saved</span></div>
+        </div>
+        <div class="hero-actions">
+          <a href="mailto:manavesh.narendra@gmail.com" class="btn-primary">▶ Get in Touch</a>
+          <a href="https://linkedin.com/in/manavesh-narendra" target="_blank" rel="noopener" class="btn-outline">LinkedIn ↗</a>
+          <a href="https://github.com/manu-karenite" target="_blank" rel="noopener" class="btn-outline">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-in" style="transition-delay:0.18s">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+            <span class="terminal-title">manavesh@ibm ~ bash</span>
           </div>
-          <div class="project-skeleton">
-        
-            <div class="col-2-of-5">
-              <div class="projects-image-and-link">
-              <div class="project-image">
-              <img src="img/projects-snapshots/project-12.png" class="u-format-project-snapshot">
-              </div>
-              <div class="projects-link">
-              <div class="projects-link--link1 col-1-of-2"><a href="https://www.npmjs.com/package/go-node-mongo" target="_blank" class="u-no-decoration">Live Here</a></div>
-              <div class="projects-link--link1 col-1-of-2">
-              <a href="https://github.com/manu-karenite/go-node-mongo" target="_blank" class="u-no-decoration">Source Code</a>
-              <link>
-              </div>
-              </div>
-              </div>
-              </div>
-             <div class="col-3-of-5">
-                <div class="project-title">go-node-mongo</div>
-                <div class="tech-used">
-                   <div class="row-of-3">
-                     <div class="tech col-1-of-3 ">Node.js</div>
-                      <div class="tech col-1-of-3">Express.js</div>
-                      <div class="tech col-1-of-3">NPM</div>
-                      
-                   </div>
-                   <div class="row-of-3">
-                      <div class="tech col-1-of-3 ">MongoDB</div>
-                      <div class="tech col-1-of-3 ">Cors</div>
-                      <div class="tech col-1-of-3">Open Source</div>
-                   </div>
-                </div>
-                <div class="project-brief-description">
-                 An <b>Open Source NPM Package</b> to initialise backend project using express.js and MongoDB as Database. Automatically Installs <b>Cors, Express.js, BodyParser</b> and other required packgaes. Converts Code Structure from <b>10 LOC to 2 LOC.</b>
-                  </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">whoami</span></div>
+            <div class="t-out acc">Manavesh — SDE II @ IBM</div>
+            <br>
+            <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat stack.json</span></div>
+            <div class="t-out hi">&nbsp;&nbsp;"core":&nbsp;["Java",&nbsp;"Spring Boot"]</div>
+            <div class="t-out hi">&nbsp;&nbsp;"infra":&nbsp;["K8s",&nbsp;"Docker"]</div>
+            <div class="t-out hi">&nbsp;&nbsp;"data":&nbsp;["Spark",&nbsp;"Kafka"]</div>
+            <div class="t-out hi">&nbsp;&nbsp;"ai":&nbsp;&nbsp;["Ollama",&nbsp;"PyTorch"]</div>
+            <br>
+            <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">git log --oneline -2</span></div>
+            <div class="t-out warn">a1f3 NLP automapping → 70% less work</div>
+            <div class="t-out warn">b2e8 Neo4j→Postgres, saved 60% cost</div>
+            <br>
+            <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd"><span class="t-cursor"></span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-             </div>
-            
-          </div>
-          
-           <div class="project-skeleton">
-        
-            <div class="col-2-of-5">
-              <div class="projects-image-and-link">
-              <div class="project-image">
-              <img src="img/projects-snapshots/project-7.jpg" class="u-format-project-snapshot">
-              </div>
-              <div class="projects-link">
-              <div class="projects-link--link1 col-1-of-2"><a href="https://shippped.herokuapp.com/home" target="_blank" class="u-no-decoration">Live Here</a></div>
-              <div class="projects-link--link1 col-1-of-2">
-              <a href="https://github.com/manu-karenite/shippped" target="_blank" class="u-no-decoration">Source Code</a>
-              <link>
-              </div>
-              </div>
-              </div>
-              </div>
-             <div class="col-3-of-5">
-                <div class="project-title">Shippped!</div>
-                <div class="tech-used">
-                   <div class="row-of-3">
-                     <div class="tech col-1-of-3 ">MongoDB</div>
-                      <div class="tech col-1-of-3">Express.js</div>
-                      <div class="tech col-1-of-3">React.js</div>
-                      
-                   </div>
-                   <div class="row-of-3">
-                      <div class="tech col-1-of-3 ">Node.js</div>
-                      <div class="tech col-1-of-3 ">JWT</div>
-                      <div class="tech col-1-of-3">Firebase</div>
-                   </div>
-                </div>
-                <div class="project-brief-description">
-                  An Ecommerce Web Application Built using <b>MERN Stack</b>, Users Authentication with <b>Firebase</b> and <b>Database as MongoDB</b>, Frontend handled with <b>React.js</b>, API built on <b>Express.js</b>. Stylings are incorporated from antd icons and components, with Bootstrap4.</div>
-             </div>
-            
-          </div>
-          <div class="project-skeleton">
-        
-            <div class="col-2-of-5">
-              <div class="projects-image-and-link">
-              <div class="project-image">
-              <img src="img/projects-snapshots/project-8.jpg" class="u-format-project-snapshot">
-              </div>
-              <div class="projects-link">
-              <div class="projects-link--link1 col-1-of-2"><a href="https://covid-warn.web.app/" target="_blank" class="u-no-decoration">Live Here</a></div>
-              <div class="projects-link--link1 col-1-of-2">
-              <a href="https://github.com/manu-karenite/covid-warn" target="_blank" class="u-no-decoration">Source Code</a>
-              <link>
-              </div>
-              </div>
-              </div>
-              </div>
-             <div class="col-3-of-5">
-                <div class="project-title">Covid Counter</div>
-                <div class="tech-used">
-                   <div class="row-of-3">
-                     <div class="tech col-1-of-3 ">React.js</div>
-                      <div class="tech col-1-of-3">Axios</div>
-                      <div class="tech col-1-of-3">API</div>
-                      
-                   </div>
-                   <div class="row-of-3">
-                      <div class="tech col-1-of-3 ">Node.js</div>
-                      <div class="tech col-1-of-3 ">npm</div>
-                      <div class="tech col-1-of-3">Firebase</div>
-                   </div>
-                </div>
-                <div class="project-brief-description">Detailed <strong>Covid Tracker</strong> Web Application built on React.js, providing <strong>Current Day Statistics</strong> to Track COVID-19 and produce Correct News. Contains <strong>STATE-WISE</strong> as well as <strong>DISTRICT-WISE</strong> Breakout for each State for detailed Analysis. The Web Application is hosted on <strong>Firebase</strong>.</div>
-             </div>
-            
-          </div>
-          <!-- <div class="project-skeleton">
-        
-            <div class="col-2-of-5">
-              <div class="projects-image-and-link">
-              <div class="project-image">
-              <img src="img/projects-snapshots/project-9.png" class="u-format-project-snapshot">
-              </div>
-              <div class="projects-link">
-              <div class="projects-link--link1 col-1-of-2"><a href="https://recipe-now.herokuapp.com/" target="_blank" class="u-no-decoration">Live Here</a></div>
-              <div class="projects-link--link1 col-1-of-2">
-              <a href="https://github.com/manu-karenite/Recipe-Now" target="_blank" class="u-no-decoration">Source Code</a>
-              <link>
-              </div>
-              </div>
-              </div>
-              </div>
-             <div class="col-3-of-5">
-                <div class="project-title">Recipe Now</div>
-                <div class="tech-used">
-                   <div class="row-of-3">
-                     <div class="tech col-1-of-3 ">React.js</div>
-                      <div class="tech col-1-of-3">Redux</div>
-                      <div class="tech col-1-of-3">Axios</div>
-                      
-                   </div>
-                   <div class="row-of-3">
-                      <div class="tech col-1-of-3 ">REST APIs</div>
-                   </div>
-                </div>
-                <div class="project-brief-description">
-                 Project developed primarily on <b>React</b> and <b>Redux</b> as a Frontend Project built as a part of Selection Process for an Internship Drive. Involves <b>multiple API Calls</b> from different Sources.
-                 </div>
-             </div>
-            
-          </div> -->
-          
-         <!---------------------------------------------------------------------------------------------------->
-           <div class="project-skeleton">
-        
-            <div class="col-2-of-5">
-              <div class="projects-image-and-link">
-              <div class="project-image">
-              <img src="img/projects-snapshots/project-6.jpg" class="u-format-project-snapshot">
-              </div>
-              <div class="projects-link">
-              <div class="projects-link--link1 col-1-of-2"><a href="https://codebae.vercel.app/" target="_blank" class="u-no-decoration">Live Here</a></div>
-              <div class="projects-link--link1 col-1-of-2">
-              <a href="https://addons.mozilla.org/en-US/firefox/addon/codebae/" target="_blank" class="u-no-decoration">Firefox Add-On</a>
-              <link>
-              </div>
-              </div>
-              </div>
-              </div>
-             <div class="col-3-of-5">
-                <div class="project-title">Codebae</div>
-                <div class="tech-used">
-                   <div class="row-of-3">
-                     <div class="tech col-1-of-3 ">Javascript</div>
-                      <div class="tech col-1-of-3">CSS</div>
-                      <div class="tech col-1-of-3">Sass</div>
-                      
-                   </div>
-                   <div class="row-of-3">
-                      <div class="tech col-1-of-3 ">Ajax</div>
-                      <div class="tech col-1-of-3 ">Promises</div>
-                      <div class="tech col-1-of-3">API</div>
-                   </div>
-                </div>
-                <div class="project-brief-description">Codebae brings in the <strong>coding contests-related</strong> info from over <b>8+</b> coding platforms, providing detailed information. It's a <b>one-stop platform</b> to hone your coding skills with lots of <B>Coding Challenges, Hackathons, Recruitment Competitions</B>, all gathered from multiple sources. It is developed with Vanilla JS, including a migration to React in the future times with more advanced features.</div>
-             </div>
-            
-          </div>
-         <!---------------------------------------------------------------------------------------------------->
-<!--           
-            <div class="project-skeleton">
-        
-               <div class="col-2-of-5">
-                 <div class="projects-image-and-link">
-                 <div class="project-image">
-                 <img src="img/projects-snapshots/project-4.png" class="u-format-project-snapshot">
-                 </div>
-                 <div class="projects-link">
-                 <div class="projects-link--link1 col-1-of-2"><a href="https://manu-karenite.github.io/weatherify/" target="_blank" class="u-no-decoration">Live Here</a></div>
-                 <div class="projects-link--link1 col-1-of-2">
-                 <a href="https://github.com/manu-karenite/weatherify" target="_blank" class="u-no-decoration">&lt;/&gt; </a>
-                 <link>
-                 </div>
-                 </div>
-                 </div>
-                 </div>
-                <div class="col-3-of-5">
-                   <div class="project-title">Weatherify | Know your Weather</div>
-                   <div class="tech-used">
-                      <div class="row-of-3">
-                         <div class="tech col-1-of-3">CSS</div>
-                         <div class="tech col-1-of-3">Sass</div>
-                         <div class="tech col-1-of-3 ">Javascript</div>
-                      </div>
-                      <div class="row-of-3">
-                         <div class="tech col-1-of-3 ">Ajax</div>
-                         <div class="tech col-1-of-3 ">XML-Http Req</div>
-                         <div class="tech col-1-of-3">API</div>
-                      </div>
-                   </div>
-                   <div class="project-brief-description">My first API-based project, using XML-HTTP Request, for providing weather and essential details, from 2 continuous callbacks and rendering them on the webpage to the user.</div>
-                </div>
-               
-             </div>
+    <hr class="divider" />
 
-            <div class="project-skeleton">
-        
-              <div class="col-2-of-5">
-                <div class="projects-image-and-link">
-                <div class="project-image">
-                <img src="img/projects-snapshots/project-1.png" class="u-format-project-snapshot">
-                </div>
-                <div class="projects-link">
-                <div class="projects-link--link1 col-1-of-2"><a href="https://manu-karenite.github.io/Cricket-at-Fingers/" target="_blank" class="u-no-decoration">Live Here</a></div>
-                <div class="projects-link--link1 col-1-of-2">
-                <a href="https://github.com/manu-karenite/Cricket-at-Fingers" target="_blank" class="u-no-decoration">&lt;/&gt; </a>
-                <link>
-                </div>
-                </div>
-                </div>
-                </div>
-               <div class="col-3-of-5">
-                  <div class="project-title">Cricket-@-Fingers</div>
-                  <div class="tech-used">
-                     <div class="row-of-3">
-                        <div class="tech col-1-of-3">HTML</div>
-                        <div class="tech col-1-of-3">CSS</div>
-                        <div class="tech col-1-of-3 long-names">Javascript</div>
-                     </div>
-                     <div class="row-of-3">
-                        <div class="tech col-1-of-3 long-names">Local Storage</div>
-                        <div class="tech col-1-of-3 dummy">dummy</div>
-                        <div class="tech col-1-of-3 dummy">dummy</div>
-                     </div>
-                  </div>
-                  <div class="project-brief-description">Developed the Web Application for children sitting idle at home, putting them back into their old school days of games, with HTML, CSS, JS ES6+. Built with Features of Avatars Selection and Customised Game Features, with enacted realtime commentary.</div>
-               </div>
-              
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="section-label">// 01 — where I've worked</p>
+      <h2 class="section-title">Experience <span>& Impact</span></h2>
+      <div class="fade-in">
+        <div class="exp-tabs">
+          <button class="exp-tab active" onclick="showExp(this,'ibm')">IBM Lab</button>
+          <button class="exp-tab" onclick="showExp(this,'lead')">IBM JDP Lead</button>
+        </div>
+        <div class="exp-panel active" id="exp-ibm">
+          <div class="exp-role">Software Development Engineer II</div>
+          <div class="exp-org">IBM Software Lab · Match360 MDM · Jul 2023 – Present</div>
+          <div class="exp-tags">
+            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Apache Camel</span>
+            <span class="tag">Kafka</span><span class="tag">Spark</span><span class="tag">Elasticsearch</span>
+            <span class="tag">RabbitMQ</span><span class="tag">Neo4j</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">HL7</span>
+            <span class="tag">Ollama</span><span class="tag">HuggingFace</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led GA launch of <strong>IBM Match360</strong> on IBM Cloud via MCSP framework.</li>
+            <li>Built <strong>dual-mode history framework</strong> — real-time via RabbitMQ + bulk indexing via Spark.</li>
+            <li>Designed extensible <strong>HL7 Message Broker</strong> with Spring Boot + Apache Camel for healthcare systems.</li>
+            <li>Architected <strong>database-agnostic Index Store Persistence Layer</strong> over OpenSearch/Elasticsearch.</li>
+            <li>Built <strong>Spark bulk indexing pipeline</strong> with adaptive batching and resilient failure handling.</li>
+            <li>Led <strong>Neo4j → PostgreSQL migration</strong>, cutting infrastructure costs by <strong>60%</strong>.</li>
+            <li>Implemented <strong>Kafka-powered Ongoing Sync</strong> for incremental data loads atop bulk datasets.</li>
+            <li>Building <strong>NLP + GenAI feature</strong> (Ollama, PyTorch) targeting 70% reduction in customer workload.</li>
+          </ul>
+        </div>
+        <div class="exp-panel" id="exp-lead">
+          <div class="exp-role">Team Lead · Scrum Master</div>
+          <div class="exp-org">IBM Developer Jumpstart Program · Jan 2024 – May 2024</div>
+          <div class="exp-tags">
+            <span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">Leadership</span><span class="tag">IBM Process Mining</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led a team of <strong>11 Early Professional Hires</strong> on the IBM Process Mining project.</li>
+            <li>Ran <strong>bi-weekly sprint ceremonies</strong> and facilitated cross-team decisions.</li>
+            <li>Maintained sprint health and removed blockers across two months of parallel development.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="section-label">// 02 — tools of the trade</p>
+      <h2 class="section-title">Technical <span>Arsenal</span></h2>
+      <div class="skills-grid fade-in">
+        <div class="skill-card">
+          <div class="skill-card-icon">⚙️</div>
+          <div class="skill-card-title">Backend & Languages</div>
+          <div class="skill-pills">
+            <span class="pill">Java</span><span class="pill">Spring Boot</span><span class="pill">Python</span>
+            <span class="pill">C++</span><span class="pill">Node.js</span><span class="pill">Apache Camel</span><span class="pill">Microservices</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">🗄️</div>
+          <div class="skill-card-title">Databases & Search</div>
+          <div class="skill-pills">
+            <span class="pill">PostgreSQL</span><span class="pill">Neo4j</span>
+            <span class="pill">MongoDB</span><span class="pill">Elasticsearch</span><span class="pill">OpenSearch</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">📡</div>
+          <div class="skill-card-title">Messaging & Streaming</div>
+          <div class="skill-pills">
+            <span class="pill">Apache Kafka</span><span class="pill">RabbitMQ</span><span class="pill">Apache Spark</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">☁️</div>
+          <div class="skill-card-title">Cloud & DevOps</div>
+          <div class="skill-pills">
+            <span class="pill">Kubernetes</span><span class="pill">Docker</span><span class="pill">OpenShift</span>
+            <span class="pill">AWS</span><span class="pill">IBM Cloud</span><span class="pill">Ansible</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">🤖</div>
+          <div class="skill-card-title">AI / ML</div>
+          <div class="skill-pills">
+            <span class="pill">Ollama</span><span class="pill">HuggingFace</span>
+            <span class="pill">PyTorch</span><span class="pill">NLP</span><span class="pill">GenAI</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">🏆</div>
+          <div class="skill-card-title">Problem Solving</div>
+          <div class="skill-pills">
+            <span class="pill">500+ LeetCode</span><span class="pill">1168 Codeforces</span>
+            <span class="pill">System Design</span><span class="pill">DSA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <p class="section-label">// 03 — recognition</p>
+      <h2 class="section-title">Awards <span>& Honours</span></h2>
+      <div class="awards-list fade-in">
+        <div class="award-item">
+          <div class="award-year">2025</div>
+          <div class="award-icon">🚀</div>
+          <div class="award-body">
+            <div class="award-name">IBM Growth Award</div>
+            <div class="award-desc">Recognised for client-centric innovations in IBM Match360, accelerating adoption and business growth.</div>
+          </div>
+        </div>
+        <div class="award-item">
+          <div class="award-year">2024</div>
+          <div class="award-icon">⭐</div>
+          <div class="award-body">
+            <div class="award-name">IBM OTAA — Outstanding Technical Achievement</div>
+            <div class="award-desc">Awarded for LLM-based automapping and cloud readiness framework, improving scalability and efficiency.</div>
+          </div>
+        </div>
+        <div class="award-item">
+          <div class="award-year">2024</div>
+          <div class="award-icon">🤝</div>
+          <div class="award-body">
+            <div class="award-name">IBM Client & Partner Success Award</div>
+            <div class="award-desc">Honoured for impactful IBM MDM Connector enhancements, improving client satisfaction and delivery.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section-label">// 04 — things I've built</p>
+      <h2 class="section-title">Personal <span>Projects</span></h2>
+      <div class="projects-grid fade-in">
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">📝</div>
+            <a href="https://github.com/manu-karenite" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+          </div>
+          <div class="project-name">BlogFreak API</div>
+          <div class="project-desc">Scalable blog backend built with Spring Boot on AWS. JWT auth, role-based access control, Guava rate limiting, OpenAPI docs.</div>
+          <div class="project-tech"><span>Spring Boot</span><span>AWS EC2</span><span>AWS RDS</span><span>JWT</span><span>JPA</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🔍</div>
+            <a href="https://leetcode.com/manu-karenite" target="_blank" rel="noopener" class="project-link">LeetCode ↗</a>
+          </div>
+          <div class="project-name">Competitive Programming</div>
+          <div class="project-desc">500+ problems on LeetCode. 1168 Codeforces rating. Deep focus on graphs, DP, trees, and low-level data structures.</div>
+          <div class="project-tech"><span>Java</span><span>C++</span><span>Graphs</span><span>DP</span></div>
+        </div>
+        <div class="project-card">
+          <div class="project-header"><div class="project-icon">🏥</div></div>
+          <div class="project-name">HL7 Message Broker</div>
+          <div class="project-desc">Extensible healthcare integration broker at IBM. Apache Camel + Spring Boot handling HL7 ingestion, routing, and transformation.</div>
+          <div class="project-tech"><span>Spring Boot</span><span>Apache Camel</span><span>HL7</span><span>IBM MDM</span></div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <p class="section-label">// 05 — background</p>
+      <h2 class="section-title">Education <span>& Certs</span></h2>
+      <div class="fade-in">
+        <div class="edu-card">
+          <div>
+            <div class="edu-yr">2019</div>
+            <div class="edu-yr-end">→ 2023</div>
+          </div>
+          <div>
+            <div class="edu-degree">B.Tech — Computer Science & Engineering</div>
+            <div class="edu-uni">Cochin University of Science and Technology, Kochi</div>
+            <div class="edu-certs">
+              <span class="cert">AWS Cloud Practitioner</span>
+              <span class="cert">IBM Enterprise Design Thinking</span>
+              <span class="cert">Docker & Kubernetes Essentials</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="project-skeleton">
-           
-              <div class="col-2-of-5">
-                <div class="projects-image-and-link">
-                <div class="project-image">
-                <img src="img/projects-snapshots/project-2.png" class="u-format-project-snapshot">
-                </div>
-                <div class="projects-link">
-                <div class="projects-link--link1 col-1-of-2"><a href="https://manu-karenite.github.io/the-Pig-Game/" target="_blank" class="u-no-decoration">Live Here</a></div>
-                <div class="projects-link--link1 col-1-of-2">
-                <a href="https://github.com/manu-karenite/the-Pig-Game" target="_blank" class="u-no-decoration">&lt;/&gt; </a>
-                <link>
-                </div>
-                </div>
-                </div>
-                </div>
-               <div class="col-3-of-5">
-                  <div class="project-title">The Pig Game</div>
-                  <div class="tech-used">
-                     <div class="row-of-3">
-                        <div class="tech col-1-of-3">HTML</div>
-                        <div class="tech col-1-of-3">CSS</div>
-                        <div class="tech col-1-of-3 long-names">Vanilla JS</div>
-                     </div>
-                     <div class="row-of-3">
-                        <div class="tech col-1-of-3 long-names">Mirror UI</div>
-                        <div class="tech col-1-of-3">Responsive</div>
-                        <div class="tech col-1-of-3 dummy">dummy</div>
-                     </div>
-                  </div>
-                  <div class="project-brief-description">Built with Vanilla JavaScript, and powerful CSS, the Pig Game is a game for a couple wishing to play on their luck and wit. The game teaches you the <i>Harms of Greed</i> and with mirror-styled UI indicating active player at the time.</div>
-               </div>
-              
+    <hr class="divider" />
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="section-label">// 06 — let's connect</p>
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-grid fade-in">
+        <div class="contact-links">
+          <a href="mailto:manavesh.narendra@gmail.com" class="contact-link">
+            <div class="contact-icon">✉️</div>
+            <div><div class="contact-type">Email</div><div class="contact-val">manavesh.narendra@gmail.com</div></div>
+          </a>
+          <a href="tel:+918252589906" class="contact-link">
+            <div class="contact-icon">📱</div>
+            <div><div class="contact-type">Phone</div><div class="contact-val">+91 825 258 9906</div></div>
+          </a>
+          <a href="https://linkedin.com/in/manavesh-narendra" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-icon">🔗</div>
+            <div><div class="contact-type">LinkedIn</div><div class="contact-val">manavesh-narendra</div></div>
+          </a>
+          <a href="https://github.com/manu-karenite" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-icon">⌥</div>
+            <div><div class="contact-type">GitHub</div><div class="contact-val">manu-karenite</div></div>
+          </a>
+          <a href="https://leetcode.com/manu-karenite" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-icon">🧩</div>
+            <div><div class="contact-type">LeetCode</div><div class="contact-val">manu-karenite · 500+ solved</div></div>
+          </a>
+        </div>
+        <div class="contact-terminal">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+              <span class="terminal-title">contact.sh</span>
             </div>
-
-            <div class="project-skeleton">
-              <div class="col-2-of-5">
-                <div class="projects-image-and-link">
-                <div class="project-image">
-                <img src="img/projects-snapshots/project-3.png" class="u-format-project-snapshot">
-                </div>
-                <div class="projects-link">
-                <div class="projects-link--link1 col-1-of-2"><a href="https://manu-karenite.github.io/Guess-The-Number/" target="_blank"  class="u-no-decoration">Live Here</a></div>
-                <div class="projects-link--link1 col-1-of-2">
-                <a href="https://github.com/manu-karenite/Guess-The-Number" target="_blank" class="u-no-decoration">&lt;/&gt; </a>
-                <link>
-                </div>
-                </div>
-                </div>
-                </div>
-               <div class="col-3-of-5">
-                  <div class="project-title">Guess My Number</div>
-                  <div class="tech-used">
-                     <div class="row-of-3">
-                        <div class="tech col-1-of-3">HTML</div>
-                        <div class="tech col-1-of-3">CSS</div>
-                        <div class="tech col-1-of-3 long-names">Vanilla JS</div>
-                     </div>
-                     <div class="row-of-3">
-                        <div class="tech col-1-of-3 long-names">Responsive</div>
-                        <div class="tech col-1-of-3 dummy">dummy</div>
-                        <div class="tech col-1-of-3 dummy">dummy</div>
-                     </div>
-                  </div>
-                  <div class="project-brief-description">My first Javascript Project which includes Audio Controls on certain points and first experience on DOM Manipulation. Built with pure JavaScript.</div>
-               </div>
-              
-            </div> -->
-
-         </section>
-         </div>
-
-        
-        
-      </main>
-      <!--Main Part ends here-->
-
-      <footer>
-         <center><div class="footer-outer">
-            
-            <div class="footer-name">
-               Manavesh Narendra
-            
-         </div>
-      
-            <div class="footer-links">
-               <div class="col-1-of-3"><a href="https://github.com/manu-karenite" target="_blank"><img src="img/svg/git.svg" class="footer-icon"></a></div>
-               <div class="col-1-of-3"><a href="https://github.com/manu-karenite/portfolio" target="_blank" style="text-decoration: none; color:inherit">&lt;/&gt;</a></div>
-               <div class="col-1-of-3"><a href="mailto:%20manu.karenite@gmail.com" target="_blank"><img src="img/svg/mail.svg" class="footer-icon"></a></div>
-            
+            <div class="terminal-body">
+              <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">./contact --hire</span></div>
+              <div class="t-out acc">✓ Open to SDE II / III roles</div>
+              <div class="t-out acc">✓ Bangalore or Remote</div>
+              <div class="t-out acc">✓ Backend / Distributed Systems</div>
+              <br>
+              <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd">cat strengths.txt</span></div>
+              <div class="t-out hi">- Enterprise Java &amp; Spring</div>
+              <div class="t-out hi">- Spark + Kafka pipelines</div>
+              <div class="t-out hi">- DB architecture &amp; migrations</div>
+              <div class="t-out hi">- Cloud-native deployments</div>
+              <div class="t-out hi">- GenAI + LLM integration</div>
+              <br>
+              <div class="t-line"><span class="t-prompt">❯</span><span class="t-cmd"><span class="t-cursor"></span></span></div>
             </div>
-            
-            <div class="footer-release">Updated : 22nd October 2023</div>
-         
-         </div>
-      </center>
-      </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-      <script src="script.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-   </body>
-</html></div>
-</div>
+  <footer>
+    <p>Built with ❤️ &nbsp;·&nbsp; <span>Manavesh Narendra</span> &nbsp;·&nbsp; 2025</p>
+  </footer>
+
+  <script>
+    // ── Hamburger / Mobile Menu ──
+    const ham = document.getElementById('hamburger');
+    const menu = document.getElementById('mobileMenu');
+
+    ham.addEventListener('click', () => {
+      const isOpen = ham.classList.toggle('open');
+      menu.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function closeMobile() {
+      ham.classList.remove('open');
+      menu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Close on backdrop tap
+    menu.addEventListener('click', (e) => { if (e.target === menu) closeMobile(); });
+
+    // ── Experience tabs ──
+    function showExp(btn, id) {
+      document.querySelectorAll('.exp-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.exp-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('exp-' + id).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    // ── Scroll fade-in ──
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+    // ── Nav highlight on scroll ──
+    const sections = document.querySelectorAll('section[id]');
+    const navAs = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+      navAs.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--accent)' : '';
+      });
+    }, { passive: true });
+  </script>
+</body>
+</html>
